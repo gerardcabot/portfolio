@@ -1,0 +1,224 @@
+{
+  "htmlLang": "es",
+  "meta": {
+    "title": "Gerard Cabot Agustín — Portafolio",
+    "description": "Científico de datos e ingeniero de software centrado en modelado predictivo y analítica de reclutamiento futbolístico — con base en Barcelona y abierto al reubicación."
+  },
+  "nav": {
+    "portfolio": "Portafolio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "langLabel": "Idioma"
+  },
+  "hero": {
+    "roles": "Científico de datos · Ingeniero de software · Analítica futbolística",
+    "location": "Resido en Barcelona · Abierto a relocalización",
+    "sub": "Modelado, plataformas y consultas PostgreSQL complicadas cuando toca — normalmente para scouts, aficionados tras bambalinas o lanzamientos bajo carga real.",
+    "ctaWork": "Trabajos",
+    "ctaContact": "Escríbeme",
+    "asideTitle": "Resumen rápido",
+    "locationLabel": "Ubicación",
+    "locationValue": "Barcelona, España",
+    "languagesLabel": "Idiomas",
+    "languagesValue": "Español · catalán (nativo), inglés (C1), francés (A2)",
+    "focusLabel": "Enfoque actual",
+    "focusPlain": "Investigación en analítica deportiva con Levante UD; servicios Python + ingesta y PostgreSQL en Fever bajo carga de producto."
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "p1": "Soy científico de datos e ingeniero de software enfocado en modelado predictivo y reclutamiento deportivo. Me importan artefactos que sobreviven al traspaso: notebooks reproducibles, servicios observables, panel que el scout reabre sin otra formación cada lunes.",
+    "p2Lead": "La mayor parte de la carga orbita entre",
+    "levanteBold": "Levante UD",
+    "levanteTrail": "(investigación en scouting con similitud) y",
+    "feverBold": "Fever",
+    "p2Trail": ", donde despliego servicios Python e ingesta de tráfico sostenido — afinado de Postgres incluido.",
+    "challengeLead": "Fuera del código: segundo puesto en el",
+    "challengeBold": "Desafío de Datos del Aig\u00fces de Barcelona",
+    "bookLead": "y participación acreditada junto a Levante en",
+    "bookSpanishNote": "<span lang=\"es\">scouting · ruptura de partido · flujos club</span>",
+    "bookAside": "Libro práctico sobre el detalle imperceptible — edición en papel en castellano (",
+    "bookAsideAfter": "), publicado en abril de 2026.",
+    "bookListing": "Ficha:",
+    "asideEducation": "Formación",
+    "eduDegree": "Grado en Ingeniería Informática",
+    "eduSpec": "especialidad en ciencia de datos",
+    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021\u20132025",
+    "eduHonoursLead": "— tesis calificada Excellent with Honours (matrícula); misma línea que",
+    "eduProjectRef": "Stars of the Future",
+    "eduProjectTrail": "en Proyectos."
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "jobs": [
+      {
+        "timeframe": "Sept 2025 \u2014 actualidad",
+        "org": "Levante UD",
+        "roles": "Científico de datos deportivos \u00b7 colaborador investigación",
+        "location": "Valencia · remoto",
+        "bullets": [
+          "Similar Brain: comparable jugadores mediante intención en el pase más allá del porcentaje de acierto para búsqueda de perfiles en fichajes.",
+          "Embalaje de outputs de similitud (perfiles exploratorios para listas cortas y reviews postpartido con narrativa táctica más sólida)."
+        ]
+      },
+      {
+        "timeframe": "Sept 2025 \u2014 actualidad",
+        "org": "Fever",
+        "roles": "Ingeniero de software",
+        "location": "Barcelona",
+        "bullets": [
+          "Servicios Python resilientes e ingesta detrás de discovery de eventos bajo carga real.",
+          "Reestructuración de rutas Postgres con mucho SQL — perfiles, esquemas y agrupación que aguanten picos casi en tiempo real."
+        ]
+      },
+      {
+        "timeframe": "Nov 2024 \u2014 Jun 2025",
+        "org": "Viseo",
+        "roles": "Consultor \u002f desarrollador SAP ABAP",
+        "location": "Barcelona",
+        "bullets": [
+          "Desarrollos ABAP a medida en grandes plantillas SAP: lógica, integraciones y entregas claras al equipo siguiente.",
+          "Orquestación junto a arquitectura y negocio sin inflar cobertura frágil."
+        ]
+      },
+      {
+        "timeframe": "Sept 2018 \u2014 Jun 2024",
+        "org": "Vedruna Gràcia",
+        "roles": "Head coach baloncesto \u00b7 titulación FCB",
+        "location": "Barcelona",
+        "bullets": [
+          "Dirección deportiva, scouting y decisiones de cancha en categorías federadas.",
+          "Hojas tácticas livianas para posesión y lanzamientos que anclaran notas de scouting en KPIs repetibles."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Habilidades y herramientas",
+    "intro": "Siete ejes alineados con la conversación de CV: lenguajes, fundamento cuantitativo, ML, plataformas, interfaz, deporte y producción empresarial.",
+    "groups": [
+      {
+        "category": "Lenguajes de programación",
+        "items": ["Python", "C", "C++", "JavaScript", "SQL", "Bash"]
+      },
+      {
+        "category": "Ciencia de datos · estadística · probabilidad",
+        "items": [
+          "EDA",
+          "Estadística descriptiva",
+          "Teoría de la probabilidad",
+          "Inferencia estadística",
+          "Pensamiento bayesiano",
+          "Planteamiento de hipótesis",
+          "Experimentación \u002f test A-B",
+          "Incertidumbre muestral",
+          "Diseño de KPIs robustos"
+        ]
+      },
+      {
+        "category": "Machine learning y deep learning",
+        "items": [
+          "scikit-learn",
+          "PyTorch",
+          "TensorFlow",
+          "XGBoost",
+          "Gradient boosting",
+          "Regresión",
+          "Clasificación",
+          "Clustering",
+          "Reducción de dimensionalidad",
+          "Embeddings · similitud",
+          "Series temporales",
+          "Evaluación y calibración"
+        ]
+      },
+      {
+        "category": "Plataformas de datos e ingesta",
+        "items": [
+          "PostgreSQL",
+          "MySQL",
+          "ETL",
+          "Ingesta batch \u002f streaming",
+          "Almacenamiento objeto (S3 \u002f R2)",
+          "Orquestación de jobs",
+          "Docker",
+          "Git · CI/CD",
+          "Linux",
+          "APIs REST",
+          "Scraping responsable"
+        ]
+      },
+      {
+        "category": "APIs · paneles · frontend",
+        "items": [
+          "FastAPI",
+          "Flask",
+          "Pydantic",
+          "React",
+          "JavaScript",
+          "HTML \u002f CSS básicos",
+          "Streamlit",
+          "Tableau",
+          "Power BI"
+        ]
+      },
+      {
+        "category": "Analítica de fútbol",
+        "items": [
+          "StatsBomb",
+          "Opta",
+          "Tracking y secuencias fusionadas",
+          "xG",
+          "Modelos amenaza \u002f xT",
+          "VAEP",
+          "PySport",
+          "matplotlib · MPLSoccer"
+        ]
+      },
+      {
+        "category": "Producción y contexto enterprise",
+        "items": [
+          "Ajuste y perfilado PostgreSQL",
+          "SAP ABAP",
+          "Ingestas a gran escala",
+          "Flujos scouting \u002f reclutamiento",
+          "Equipos deportivos que consumen artefactos de datos"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Proyectos",
+    "intro": "Dos piezas recurrentes — tesis laureada más un reto ciudadano sobre telemetría de consumo.",
+    "cards": [
+      {
+        "title": "Stars of the Future",
+        "description": "Stack automatizado para scouting (tesis Excellent with Honours en UPF): KPIs StatsBomb, XGBoost para jóvenes de LaLiga, Flask + React en producción para comparativas vivas.",
+        "highlight": "",
+        "linkLabels": ["Demo", "GitHub", "LinkedIn"]
+      },
+      {
+        "title": "Aig\u00fces Data Challenge Barcelona",
+        "description": "Detección de anomalías en patrones telelectura en el entorno metropolitano del agua.",
+        "highlight": "Segundo premio · Data Challenge AB",
+        "linkLabels": ["Vídeo", "Nota de prensa"]
+      }
+    ]
+  },
+  "projectCard": {
+    "cta": "Ver recurso enlazado",
+    "more": "También",
+    "screenReaderLead": "Abre el destino principal en una pestaña nueva."
+  },
+  "contact": {
+    "heading": "Contacto",
+    "intro": "Contratos, scouting o ingeniería: email es más fiable; respondo en catalán, castellano o inglés usando el mismo idioma del mensaje.",
+    "channels": "Canales",
+    "emailLabel": "Correo ·",
+    "compose": "Redactar mensaje",
+    "languagesLine": "<strong>Lenguas:</strong> castellano y catalán (nativo), inglés (C1), francés (A2)."
+  },
+  "footer": "Hecho con Astro y Tailwind."
+}

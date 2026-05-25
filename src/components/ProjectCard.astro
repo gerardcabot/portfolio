@@ -1,11 +1,12 @@
 ---
-import type { Project } from "../data/projects";
+import type { HydratedProject } from "../lib/hydrateProjects";
 
 interface Props {
-  project: Project;
+  project: HydratedProject;
+  labels: { cta: string; more: string; screenReaderLead: string };
 }
 
-const { project } = Astro.props;
+const { project, labels } = Astro.props;
 
 const iconClass =
   "size-3.5 shrink-0 text-amber-200/95";
@@ -20,7 +21,7 @@ const iconClass =
   >
     {
       project.highlight ? (
-        <p class="mb-3 inline-flex w-fit rounded-[3px] border border-amber-500/50 bg-[#2a2318] px-2.5 py-1 font-sans text-[11px] font-semibold uppercase tracking-[0.1em] text-amber-200/95">
+        <p class="mb-3 inline-flex max-w-fit rounded-[3px] border border-amber-500/50 bg-[#2a2318] px-2.5 py-1 font-sans text-[11px] font-semibold uppercase tracking-[0.1em] text-amber-200/95">
           {project.highlight}
         </p>
       ) : null
@@ -35,25 +36,21 @@ const iconClass =
       {
         project.tags.map((tag) => (
           <li>
-            <span class="rounded-[2px] border border-stone-700/95 bg-[#141210] px-2 py-0.5 text-[11px] font-medium text-stone-400">
-              {tag}
-            </span>
+            <span class="skill-chip text-[11px] font-medium text-stone-400">{tag}</span>
           </li>
         ))
       }
     </ul>
-    <p class="sr-only">
-      Opens the primary project destination in a new browser tab.
-    </p>
+    <p class="sr-only">{labels.screenReaderLead}</p>
     <span
       class="font-sans mt-6 inline-flex w-fit items-center gap-2 border-b border-amber-500/85 pb-[2px] text-[13px] font-semibold text-amber-200/97 transition group-hover/card:border-amber-300 group-hover/card:text-[#fcefd9]"
     >
-      Open linked work <span aria-hidden="true">&nbsp;↓</span>
+      {labels.cta} <span aria-hidden="true">&nbsp;↓</span>
     </span>
   </a>
   <div class="flex flex-shrink-0 flex-wrap items-start gap-x-10 gap-y-4 border-t border-stone-800 bg-[#181614] px-7 py-[0.92rem] max-sm:flex-col max-sm:px-5">
     <span class="pt-0.5 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-stone-500">
-      Also
+      {labels.more}
     </span>
     <div class="flex min-w-0 flex-1 flex-wrap gap-2 font-sans">
       {

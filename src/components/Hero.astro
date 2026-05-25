@@ -1,5 +1,15 @@
 ---
 import { contentShell } from "../config/layout";
+import type { Locale, Messages } from "../i18n/locales";
+import { localeHash } from "../i18n/locales";
+
+interface Props {
+  messages: Messages;
+  locale: Locale;
+}
+
+const { messages: m, locale } = Astro.props;
+const h = m.hero;
 ---
 
 <section
@@ -13,14 +23,14 @@ import { contentShell } from "../config/layout";
         class="animate-rise mb-8 text-[14px] font-medium leading-snug text-stone-400"
         style="animation-delay: 0ms"
       >
-        Data Scientist · Software Engineer · Football Analytics
+        {h.roles}
         <br />
-        <span class="text-stone-500">Based in Barcelona · Open to relocation</span>
+        <span class="text-stone-500">{h.location}</span>
       </p>
       <div class="max-w-xl border-l-[3px] border-amber-500/85 pl-5 sm:max-w-none sm:pl-6 lg:max-w-2xl">
         <h1
           id="hero-heading"
-          class="font-display text-[2.375rem] font-semibold tracking-[-0.02em] text-[#fcf6ee] leading-[1.12] sm:text-[2.875rem]"
+          class="font-display text-[2.375rem] font-semibold tracking-[-0.02em] leading-[1.12] text-[#fcf6ee] sm:text-[2.875rem]"
           style="animation-delay: 50ms"
         >
           Gerard Cabot Agustín
@@ -29,8 +39,7 @@ import { contentShell } from "../config/layout";
           class="animate-rise mt-4 max-w-xl text-pretty text-[1.0625rem] leading-[1.62] text-stone-400 sm:max-w-2xl"
           style="animation-delay: 110ms"
         >
-          Modelling, platforms, and the occasional messy Postgres query — usually for scouts and fans behind the scenes,
-          or for the next product release shipping under load.
+          {h.sub}
         </p>
         <div
           class="animate-rise mt-8 flex flex-wrap items-center gap-3 border-t border-stone-800/90 pt-6"
@@ -38,36 +47,35 @@ import { contentShell } from "../config/layout";
         >
           <a
             class="rounded-md bg-amber-500 px-5 py-2.5 text-sm font-semibold text-[#171310] outline outline-1 outline-amber-500/95 transition hover:bg-amber-400"
-            href="#projects">Selected work</a
+            href={localeHash(locale, "projects")}>{h.ctaWork}</a
           >
           <a
             class="rounded-md border border-stone-600 px-5 py-2.5 text-sm font-medium text-stone-200 transition hover:border-amber-500/65 hover:bg-stone-900/85"
-            href="#contact">Write me</a
+            href={localeHash(locale, "contact")}>{h.ctaContact}</a
           >
         </div>
       </div>
     </div>
 
     <aside
-      aria-label="At a glance"
+      aria-label={h.asideTitle}
       class="surface-muted animate-rise rounded-lg p-6 lg:sticky lg:top-28 lg:col-span-5 lg:self-start xl:top-32"
       style="animation-delay: 220ms"
     >
-      <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-stone-500">At a glance</p>
+      <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-stone-500">{h.asideTitle}</p>
       <dl class="mt-5 space-y-4 border-t border-stone-700/85 pt-4 font-sans text-[0.89375rem] text-stone-400">
         <div>
-          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">Location</dt>
-          <dd class="mt-1 font-medium text-stone-200">Barcelona, Spain</dd>
+          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">{h.locationLabel}</dt>
+          <dd class="mt-1 font-medium text-stone-200">{h.locationValue}</dd>
         </div>
         <div>
-          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">Relocation</dt>
-          <dd class="mt-1 text-stone-300">EU / UK (open to sensible moves)</dd>
+          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">{h.languagesLabel}</dt>
+          <dd class="mt-1 leading-snug text-stone-300">{h.languagesValue}</dd>
         </div>
         <div>
-          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">Active focus</dt>
+          <dt class="text-[11px] font-semibold uppercase tracking-[0.1em] text-stone-500">{h.focusLabel}</dt>
           <dd class="mt-1 leading-snug text-stone-300">
-            Research-style football analytics (<span class="whitespace-nowrap">Levante UD</span>) plus production Python /
-            Postgres services (<span class="whitespace-nowrap">Fever</span>)
+            {h.focusPlain}
           </dd>
         </div>
       </dl>

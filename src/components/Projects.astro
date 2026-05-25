@@ -1,23 +1,27 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
-import { projects } from "../data/projects";
 import { contentShell } from "../config/layout";
+import { hydrateProjects } from "../lib/hydrateProjects";
+import type { Messages } from "../i18n/locales";
+
+interface Props {
+  messages: Messages;
+}
+
+const { messages: m } = Astro.props;
+const projects = hydrateProjects(m);
 ---
 
 <section id="projects" class="scroll-mt-28 bg-[#151312]" aria-labelledby="projects-heading">
   <div class:list={[contentShell, "py-14 sm:py-16 lg:py-[5.25rem]"]}>
     <h2 id="projects-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
-      Projects
+      {m.projects.heading}
     </h2>
     <p class="mt-4 max-w-3xl text-[0.9575rem] leading-relaxed text-stone-500">
-      A pair of artefacts I still point recruiters to — one shipped as thesis/coursework, another from a civic data challenge around smart-meter telemetry.
+      {m.projects.intro}
     </p>
     <div class="mt-10 grid gap-8 md:grid-cols-2 md:gap-10 lg:gap-12 xl:gap-14">
-      {
-        projects.map((project) => (
-          <ProjectCard project={project} />
-        ))
-      }
+      {projects.map((project) => <ProjectCard labels={m.projectCard} project={project} />)}
     </div>
   </div>
 </section>

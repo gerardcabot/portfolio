@@ -63,15 +63,9 @@
     opacity: 0;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .animate-rise {
-      animation: none;
-      opacity: 1;
-      transform: none;
-    }
+  .skill-chip {
+    @apply inline-block max-w-full whitespace-nowrap rounded-[2px] border border-stone-700/95 bg-[#141210] px-2.5 py-1 text-[12.5px] font-medium tracking-tight text-stone-300;
   }
-
-  /** Very light paper grain overlay */
   .bg-grain::before {
     content: "";
     pointer-events: none;

@@ -1,20 +1,27 @@
 ---
 import "../styles/global.css";
+import type { Locale, Messages } from "../i18n/locales";
+import { defaultLocale, localePath, locales } from "../i18n/locales";
 
 interface Props {
-  title?: string;
-  description?: string;
+  locale: Locale;
+  messages: Messages;
 }
 
-const {
-  title = "Gerard Cabot Agustín — Portfolio",
-  description =
-    "Gerard Cabot Agustín is a data scientist and software engineer focused on predictive modelling and football recruitment analytics — based in Barcelona, open to relocating.",
-} = Astro.props;
+const { locale, messages } = Astro.props;
+const title = messages.meta.title;
+const description = messages.meta.description;
+const htmlLang = messages.htmlLang;
+
+const origin = Astro.site?.origin ?? Astro.url.origin;
+
+function absLangPath(loc: Locale): string {
+  return `${origin}${localePath(loc)}`;
+}
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={htmlLang} class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -22,6 +29,13 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="canonical" href={absLangPath(locale)} />
+    {
+      locales.map((l) => (
+        <link rel="alternate" hreflang={l} href={absLangPath(l)} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={absLangPath(defaultLocale)} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
