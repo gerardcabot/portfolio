@@ -17,7 +17,7 @@
     "roles": "Data Scientist · Software Engineer · Football Analytics",
     "location": "Based in Barcelona · Open to relocation",
     "sub": "Modelling, platforms, and the occasional messy Postgres query, usually for scouts and fans behind the scenes, or for the next product release shipping under load.",
-    "ctaWork": "Selected work",
+    "ctaWork": "Projects & demos",
     "ctaContact": "Write me",
     "asideTitle": "At a glance",
     "locationLabel": "Location",
@@ -25,7 +25,7 @@
     "languagesLabel": "Languages",
     "languagesValue": "Spanish · Catalan (native), English (C1), French (A2)",
     "focusLabel": "Current focus",
-    "focusPlain": "Football DS research collaborator at Levante UD; durable Python ingestion and Postgres work at Fever for product-scale workloads."
+    "focusPlain": "Football Data Scientist research collaborator at Levante UD; durable Python ingestion and Postgres work at Fever for product-scale workloads."
   },
   "about": {
     "heading": "About",
@@ -97,7 +97,7 @@
   },
   "skills": {
     "heading": "Skills & tooling",
-    "intro": "Seven buckets that mirror how I recruit in CV conversations: coding languages first, quantitative foundations, modelling, infra, interfaces, football-specific tooling, then production footprints.",
+    "intro": "Six pillars following how I unpack a screening call: programming, quantitative foundations, modelling stacks, ingestion and platforms that survived real traffic, clickable interfaces for stakeholders, then football-specialist tooling.",
     "groups": [
       {
         "category": "Programming languages",
@@ -142,19 +142,24 @@
         ]
       },
       {
-        "category": "Data platforms & pipelines",
+        "category": "Data platforms, ingestion & production",
         "items": [
           "PostgreSQL",
+          "PostgreSQL profiling \u0026 tuning",
           "MySQL",
+          "SAP ABAP",
           "ETL",
           "Streaming \u002f batch ingestion",
+          "Large-scale ingestion",
           "Object storage (S3 \u002f R2)",
           "Workflow scheduling",
           "Docker",
           "Git · CI/CD",
           "Linux",
           "REST APIs",
-          "Web scraping"
+          "Web scraping",
+          "Scouting \u002f recruitment workflows",
+          "Coaching staffs + data artefacts"
         ]
       },
       {
@@ -182,16 +187,6 @@
           "VAEP",
           "PySport",
           "matplotlib · MPLSoccer"
-        ]
-      },
-      {
-        "category": "Production & enterprise context",
-        "items": [
-          "PostgreSQL profiling \u0026 tuning",
-          "SAP ABAP",
-          "Large-scale ingestion",
-          "Scouting \u002f recruitment workflows",
-          "Coaching staffs + data artefacts"
         ]
       }
     ]

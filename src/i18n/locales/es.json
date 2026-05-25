@@ -17,7 +17,7 @@
     "roles": "Científico de datos · Ingeniero de software · Analítica futbolística",
     "location": "Resido en Barcelona · Abierto a relocalización",
     "sub": "Modelado, plataformas y consultas PostgreSQL complicadas cuando toca, normalmente para scouts, aficionados tras bambalinas o lanzamientos bajo carga real.",
-    "ctaWork": "Trabajos",
+    "ctaWork": "Proyectos y demos",
     "ctaContact": "Escríbeme",
     "asideTitle": "Resumen rápido",
     "locationLabel": "Ubicación",
@@ -97,7 +97,7 @@
   },
   "skills": {
     "heading": "Habilidades y herramientas",
-    "intro": "Siete ejes alineados con la conversación de CV: lenguajes, fundamento cuantitativo, ML, plataformas, interfaz, deporte y producción empresarial.",
+    "intro": "Seis bloques ordenados como en la charla CV: lenguajes, estadística cuantitativa, ML/Deep Learning, plataforma más ingesta más producción real, herramientas que se clickean desde el equipo, dominio deportivo.",
     "groups": [
       {
         "category": "Lenguajes de programación",
@@ -135,19 +135,24 @@
         ]
       },
       {
-        "category": "Plataformas de datos e ingesta",
+        "category": "Plataformas de datos, ingesta y producción",
         "items": [
           "PostgreSQL",
+          "Ajuste y perfilado PostgreSQL",
           "MySQL",
+          "SAP ABAP",
           "ETL",
           "Ingesta batch \u002f streaming",
+          "Ingestas a gran escala",
           "Almacenamiento objeto (S3 \u002f R2)",
           "Orquestación de jobs",
           "Docker",
           "Git · CI/CD",
           "Linux",
           "APIs REST",
-          "Scraping responsable"
+          "Scraping responsable",
+          "Flujos scouting \u002f reclutamiento",
+          "Equipos deportivos que consumen artefactos de datos"
         ]
       },
       {
@@ -175,16 +180,6 @@
           "VAEP",
           "PySport",
           "matplotlib · MPLSoccer"
-        ]
-      },
-      {
-        "category": "Producción y contexto enterprise",
-        "items": [
-          "Ajuste y perfilado PostgreSQL",
-          "SAP ABAP",
-          "Ingestas a gran escala",
-          "Flujos scouting \u002f reclutamiento",
-          "Equipos deportivos que consumen artefactos de datos"
         ]
       }
     ]

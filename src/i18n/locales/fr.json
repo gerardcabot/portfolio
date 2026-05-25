@@ -17,7 +17,7 @@
     "roles": "Data scientist · Ingénieur logiciel · Analytics football",
     "location": "Basé à Barcelone · Ouvert aux relocalisations raisonnables",
     "sub": "Modélisation, plateformes et grosses requêtes Postgres quand il le faut, souvent pour des recruteurs et des fans backstage, ou pour la prochaine livraison produit sous charge.",
-    "ctaWork": "Travaux",
+    "ctaWork": "Projets & démos",
     "ctaContact": "Écrivez-moi",
     "asideTitle": "Synthèse",
     "locationLabel": "Localisation",
@@ -97,7 +97,7 @@
   },
   "skills": {
     "heading": "Compétences \u0026 outillage",
-    "intro": "Sept briques fidèles aux entretiens : langages, fondations stats, apprentissage, plateaux data, couches interface, tooling football puis contexte prod.",
+    "intro": "Six blocs rangés comme sur un CV vivant : langages, socle stats, modelling, ingestion et mise en prod, couches visibles clicables, bloc football métier.",
     "groups": [
       {
         "category": "Langages de programmation",
@@ -135,19 +135,24 @@
         ]
       },
       {
-        "category": "Plateformes data \u0026 pipelines",
+        "category": "Plateformes data, ingestion \u0026 prod",
         "items": [
           "PostgreSQL",
+          "Profilage \u0026 tuning Postgres",
           "MySQL",
+          "SAP ABAP",
           "ETL",
           "Ingestion batch \u002f streaming",
+          "Ingestion à grande échelle",
           "Stockage objet (S3 \u002f R2)",
           "Planification workflows",
           "Docker",
           "Git · CI/CD",
           "Linux",
           "API REST",
-          "Web scraping prudent"
+          "Web scraping prudent",
+          "Workflows scouting \u002f recrutement",
+          "Staffs terrain + artefacts de données"
         ]
       },
       {
@@ -175,16 +180,6 @@
           "VAEP",
           "PySport",
           "matplotlib · MPLSoccer"
-        ]
-      },
-      {
-        "category": "Production \u0026 contexte enterprise",
-        "items": [
-          "Profilage \u0026 tuning Postgres",
-          "SAP ABAP",
-          "Ingestion à grande échelle",
-          "Workflows scouting \u002f recrutement",
-          "Equipages sportifs + artefacts donnés"
         ]
       }
     ]

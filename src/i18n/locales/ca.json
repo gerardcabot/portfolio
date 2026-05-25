@@ -17,7 +17,7 @@
     "roles": "Científic de dades · Enginyer de programari · Analítica futbolística",
     "location": "Resido a Barcelona · Obert a la relocalització",
     "sub": "Modelatge, plataformes i consultes Postgres complicades quan cal, habitualment per a scouts i aficionats darrere del teló, o per al proper llançament de producte sota càrrega real.",
-    "ctaWork": "Feina destacada",
+    "ctaWork": "Projectes i demos",
     "ctaContact": "Escriviu-me",
     "asideTitle": "Panorama ràpid",
     "locationLabel": "Ubicació",
@@ -97,7 +97,7 @@
   },
   "skills": {
     "heading": "Competències i eines",
-    "intro": "Set ejes que respon al CV: llenguatges de programació, fonaments quantitatatius, aprenentatge automàtic, plataforma de dades, interfícies, futbol i producció empresarial.",
+    "intro": "Sis blocs ordenats com al CV verbal: codi, base quantitativa, modelatge ML, infra i ingesta sota producte, eines que obre el scout o el stakeholder, especialitat futbolística.",
     "groups": [
       {
         "category": "Llenguatges de programació",
@@ -135,19 +135,24 @@
         ]
       },
       {
-        "category": "Plataformes de dades i pipelines",
+        "category": "Plataformes de dades, ingesta i producció",
         "items": [
           "PostgreSQL",
+          "Profilació i afinació PostgreSQL",
           "MySQL",
+          "SAP ABAP",
           "ETL",
           "Ingestió batch \u002f streaming",
+          "Ingestió gran escala",
           "Emmagatzematge objecte (S3 \u002f R2)",
           "Planificació de jobs",
           "Docker",
           "Git · CI/CD",
           "Linux",
           "API REST",
-          "Scraping responsable"
+          "Scraping responsable",
+          "Fluxos de scouting · reclutament",
+          "Cos tècnics que consumeixen artefacts de dades"
         ]
       },
       {
@@ -175,16 +180,6 @@
           "VAEP",
           "PySport",
           "matplotlib · MPLSoccer"
-        ]
-      },
-      {
-        "category": "Producció i context enterprise",
-        "items": [
-          "Profilació i afinació PostgreSQL",
-          "SAP ABAP",
-          "Ingestió gran escala",
-          "Fluxos de scouting · reclutament",
-          "Cos tècnics que consumeixen artefacts de dades"
         ]
       }
     ]
