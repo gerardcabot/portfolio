@@ -1,6 +1,10 @@
 # Gerard Cabot — Portfolio
 
+**Live site:** https://gerardcabot.vercel.app
+
 Single-page developer portfolio built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). Static output only — suitable for **free** hosting.
+
+**Source repo:** https://github.com/gerardcabot/portfolio
 
 ## Prerequisites
 
@@ -42,12 +46,12 @@ Optional: drop a photo at `public/photo.jpg` and reference it from `Hero.astro` 
 
    _(If you prefer not to use the GitHub CLI, create an empty repo in the GitHub UI, `git remote add origin …`, then `git push -u origin main`.)_
 
-2. **Import the repo in Vercel**
+2. **Import / link the repo in Vercel**
 
-   Go to [vercel.com/new](https://vercel.com/new). Vercel will detect Astro; leave defaults (**Output**: static `dist`**).
+   Go to [vercel.com/new](https://vercel.com/new). This project deploys statically with **Build Command**: `astro build`, **Output**: `dist`. Name the project `gerardcabot` → the site resolves to **`https://gerardcabot.vercel.app`**.
 
-3. **Choose your URL**
+### Git-connected deploys
 
-   When creating (or renaming) the Vercel project, set **Project Name** to `gerardcabot` → the site serves at **`https://gerardcabot.vercel.app`**.
+If linking `gerardcabot/portfolio` fails with **Login Connection** errors, enable GitHub for your Vercel account under login connections ([docs](https://vercel.com/docs/accounts/create-an-account#login-methods-and-connections)), then reconnect the repository in Project → Settings → Git.
 
 Later you can attach a purchased domain under **Project → Settings → Domains** — hosting stays on the Hobby (free) plan.
