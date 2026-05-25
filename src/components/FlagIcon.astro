@@ -1,0 +1,43 @@
+---
+import type { Locale } from "../i18n/locales";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+
+/** Micro flags; ~18×13 visual with border for contrast on dark UI */
+const box = "block h-[1.125rem] w-[1.5rem] shrink-0 overflow-hidden rounded-[3px] border border-black/40 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12)]";
+---
+
+{
+  locale === "en" ? (
+    <svg class={box} viewBox="0 0 60 36" aria-hidden="true" focusable="false">
+      <rect width="60" height="36" fill="#012169" />
+      <path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="8" />
+      <path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="4" />
+      <path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="10" />
+      <path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="6" />
+    </svg>
+  ) : locale === "es" ? (
+    <svg class={box} viewBox="0 0 3 2" aria-hidden="true" focusable="false">
+      <rect width="3" height="2" fill="#c60b1e" />
+      <rect y="0.5" width="3" height="1" fill="#ffc400" />
+    </svg>
+  ) : locale === "ca" ? (
+    <svg class={box} viewBox="0 0 25 16" aria-hidden="true" focusable="false">
+      <rect width="25" height="16" fill="#FCDD09" />
+      <rect y="1.5" width="25" height="1.5" fill="#DA291C" />
+      <rect y="4.5" width="25" height="1.5" fill="#DA291C" />
+      <rect y="7.5" width="25" height="1.5" fill="#DA291C" />
+      <rect y="10.5" width="25" height="1.5" fill="#DA291C" />
+    </svg>
+  ) : (
+    <svg class={box} viewBox="0 0 3 2" aria-hidden="true" focusable="false">
+      <rect width="1" height="2" fill="#0055a4" />
+      <rect x="1" width="1" height="2" fill="#fff" />
+      <rect x="2" width="1" height="2" fill="#ef4135" />
+    </svg>
+  )
+}

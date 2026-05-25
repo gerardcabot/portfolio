@@ -1,4 +1,5 @@
 ---
+import FlagIcon from "./FlagIcon.astro";
 import { contentShell } from "../config/layout";
 import type { Locale, Messages } from "../i18n/locales";
 import { localeChoices, locales, localeHash } from "../i18n/locales";
@@ -13,61 +14,29 @@ const n = messages.nav;
 
 const localeHref = localeHash(locale, "top");
 
-/** Active locale chip */
-const localeActiveChip =
-  "inline-flex flex-col gap-0.5 rounded-lg border px-4 py-2 text-left sm:flex-row sm:items-baseline sm:gap-3";
-const localeInactiveChip =
-  `${localeActiveChip} border-stone-500/95 bg-transparent text-stone-200 hover:border-amber-500/80 hover:bg-stone-800/95 hover:text-[#fcf6ee]`;
-
-const localeCodeBadge = "font-mono text-[11px] font-bold uppercase tracking-tight text-amber-200/95";
+const flagBtnBase =
+  "inline-flex shrink-0 items-center justify-center rounded-md p-[5px] transition outline-none focus-visible:bg-stone-800/95 focus-visible:ring-2 focus-visible:ring-amber-500/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121110]";
 ---
 
-<header class="sticky top-0 z-50">
-  <div class="border-b border-amber-500/35 bg-linear-to-br from-[#2a261f] via-[#1f1c19] to-[#181614] shadow-[inset_0_1px_0_0_rgba(251,191,36,0.08)]">
-    <div class:list={[contentShell, "flex flex-col gap-4 py-3.5"]}>
-      <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <p class="font-sans text-[13px] font-bold uppercase tracking-[0.16em] text-amber-200/98">{n.langLabel}</p>
-      </div>
-      <nav class="flex flex-wrap gap-x-3 gap-y-2" aria-label={n.langLabel}>
-        {
-          locales.map((loc) => {
-            const label = localeChoices[loc];
-
-            return loc === locale ? (
-              <span
-                class:list={[localeActiveChip, "cursor-default border-amber-500/70 bg-[#362c22] shadow-sm"]}
-                aria-current="page"
-              >
-                <span class={localeCodeBadge}>{loc}</span>
-                <span class="font-sans text-sm font-semibold text-[#fcf6ee]">{label}</span>
-              </span>
-            ) : (
-              <a href={localeHash(loc, "top")} class:list={[localeInactiveChip]} lang={loc}>
-                <span class={localeCodeBadge}>{loc}</span>
-                <span class="font-sans text-sm font-semibold">{label}</span>
-              </a>
-            );
-          })
-        }
-      </nav>
+<header class="sticky top-0 z-50 border-b border-stone-800/95 bg-[#121110]/95 backdrop-blur-sm supports-[backdrop-filter]:bg-[#121110]/88">
+  <nav
+    class:list={[contentShell, "flex flex-wrap items-center justify-between gap-x-8 gap-y-4 py-4"]}
+    aria-label={n.portfolio}
+  >
+    <div class="min-w-0">
+      <a
+        href={localeHref}
+        class="font-display block text-[0.9375rem] font-semibold leading-tight tracking-tight text-[#fdf7ef]"
+      >
+        Gerard Cabot Agustín
+      </a>
+      <p class="mt-0.5 text-[11px] font-medium uppercase tracking-[0.12em] text-stone-500">{n.portfolio}</p>
     </div>
-  </div>
 
-  <div class="border-b border-stone-800/95 bg-[#121110]/95 backdrop-blur-sm supports-[backdrop-filter]:bg-[#121110]/88">
-    <nav
-      class:list={[contentShell, "flex flex-wrap items-end justify-between gap-4 pb-4 pt-4"]}
-      aria-label={n.portfolio}
-    >
-      <div class="min-w-0">
-        <a
-          href={localeHref}
-          class="font-display block text-[0.9375rem] font-semibold leading-tight tracking-tight text-[#fdf7ef]"
-        >
-          Gerard Cabot Agustín
-        </a>
-        <p class="mt-0.5 text-[11px] font-medium uppercase tracking-[0.12em] text-stone-500">{n.portfolio}</p>
-      </div>
-      <ul class="flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] font-medium leading-snug text-stone-400 sm:justify-end sm:text-sm">
+    <div class="flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-3 sm:ms-auto sm:w-auto sm:justify-end sm:gap-x-7 md:gap-x-8">
+      <ul
+        class="flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] font-medium leading-snug text-stone-400 sm:text-sm"
+      >
         <li>
           <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href={localeHash(locale, "about")}
             >{n.about}</a
@@ -94,6 +63,29 @@ const localeCodeBadge = "font-mono text-[11px] font-bold uppercase tracking-tigh
           >
         </li>
       </ul>
-    </nav>
-  </div>
+
+      <div class="flex items-center gap-1 border-stone-700/90 sm:border-l sm:pl-5" role="group" aria-labelledby="lang-heading">
+        <span id="lang-heading" class="sr-only">{n.langLabel}</span>
+        {
+          locales.map((loc) => {
+            const label = localeChoices[loc];
+            const aria = `${label} (${loc})`;
+            const activeCls = `${flagBtnBase} cursor-default opacity-100 ring-2 ring-amber-500/70 ring-offset-2 ring-offset-[#121110]`;
+            const idleCls = `${flagBtnBase} opacity-72 hover:bg-stone-800/85 hover:opacity-100`;
+
+            return loc === locale ? (
+              <span class={activeCls} aria-current="page" title={aria}>
+                <FlagIcon locale={loc} />
+                <span class="sr-only">{aria}</span>
+              </span>
+            ) : (
+              <a href={localeHash(loc, "top")} class={idleCls} lang={loc} title={aria} aria-label={aria}>
+                <FlagIcon locale={loc} />
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </nav>
 </header>
