@@ -1,45 +1,53 @@
 ---
 import { contact } from "../data/contact";
+import { contentShell } from "../config/layout";
 ---
 
-<section id="contact" class="scroll-mt-28 px-4 pb-20 pt-14 sm:px-6 lg:pb-28 lg:pt-16" aria-labelledby="contact-heading">
-  <div class="mx-auto max-w-3xl">
-    <h2 id="contact-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
-      Contact
-    </h2>
-    <div class="mt-8 surface-muted max-w-xl rounded-lg p-[1.4rem_1.35rem] sm:p-8">
-      <p class="text-[0.9525rem] leading-relaxed text-stone-400">
-        Hiring, collaborations, scouting analytics, engineering roles — easiest path is email. I reply in Catalan, Spanish, or English depending on yours.
-      </p>
-      <p class="mt-5 truncate text-[0.9525rem] text-stone-500 sm:text-wrap">
-        <span class="text-stone-500">Mail ·</span>
-        {" "}
-        <a class="font-medium text-amber-200/95 underline decoration-amber-500/45 underline-offset-[3px] transition hover:text-amber-100" href={`mailto:${contact.email}`}>
-          {contact.email}
-        </a>
-      </p>
-      <div class="mt-7 flex flex-wrap gap-x-7 gap-y-3 text-[14px] font-medium leading-none">
-        <a
-          class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]"
-          href={contact.github}
-          target="_blank"
-          rel="noopener noreferrer">GitHub</a
-        >
-        <a
-          class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]"
-          href={contact.linkedin}
-          target="_blank"
-          rel="noopener noreferrer">LinkedIn</a
-        >
-        <a
-          class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]"
-          href={`mailto:${contact.email}`}>Compose email</a
-        >
+<section id="contact" class="scroll-mt-28 pb-20 pt-14 sm:pt-16 lg:pb-28 lg:pt-16" aria-labelledby="contact-heading">
+  <div class:list={[contentShell]}>
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-12 xl:gap-x-16">
+      <div class="lg:col-span-5">
+        <h2 id="contact-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
+          Contact
+        </h2>
+        <p class="mt-4 max-w-xl text-[0.9525rem] leading-relaxed text-stone-500">
+          Hiring, collaborations, scouting analytics, or engineering conversations — email works best. I usually respond in
+          Catalan, Spanish, or English, in the same language you use in your message.
+        </p>
       </div>
-      <p class="mt-6 text-[11.5px] leading-relaxed text-stone-600">
-        Languages:&nbsp;<strong class="font-medium text-stone-400">Spanish &amp; Catalan (native)</strong>,{" "}
-        <strong class="font-medium text-stone-400">English (C1)</strong>,{" "}<strong class="font-medium text-stone-400">French (A2)</strong>.
-      </p>
+      <div class="mt-10 surface-muted rounded-lg p-[1.4rem_1.35rem] sm:p-8 lg:col-span-7 lg:mt-6">
+        <p class="text-[11px] font-semibold uppercase tracking-[0.12em] text-stone-500">Direct channels</p>
+        <p class="mt-4 truncate text-[0.9525rem] text-stone-500 sm:text-wrap">
+          <span class="text-stone-500">Email ·</span>{" "}
+          <a
+            class="font-medium text-amber-200/95 underline decoration-amber-500/45 underline-offset-[3px] transition hover:text-amber-100"
+            href={`mailto:${contact.email}`}
+          >
+            {contact.email}
+          </a>
+        </p>
+        <div class="mt-7 flex flex-wrap gap-x-7 gap-y-3 text-[14px] font-medium leading-none">
+          <a
+            class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]"
+            href={contact.github}
+            target="_blank"
+            rel="noopener noreferrer">GitHub</a
+          >
+          <a
+            class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]"
+            href={contact.linkedin}
+            target="_blank"
+            rel="noopener noreferrer">LinkedIn</a
+          >
+          <a class="border-b border-dotted border-stone-600 pb-px text-stone-300 hover:border-amber-500 hover:text-[#fcf6ee]" href={`mailto:${contact.email}`}
+            >Compose email</a
+          >
+        </div>
+        <p class="mt-6 border-t border-stone-700/80 pt-5 text-[11.5px] leading-relaxed text-stone-600">
+          Languages: <strong class="font-medium text-stone-400">Spanish &amp; Catalan (native)</strong>,{" "}
+          <strong class="font-medium text-stone-400">English (C1)</strong>, <strong class="font-medium text-stone-400">French (A2)</strong>.
+        </p>
+      </div>
     </div>
   </div>
 </section>

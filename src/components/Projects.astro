@@ -1,18 +1,18 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
 import { projects } from "../data/projects";
+import { contentShell } from "../config/layout";
 ---
 
 <section id="projects" class="scroll-mt-28 bg-[#151312]" aria-labelledby="projects-heading">
-  <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-[5.25rem]">
+  <div class:list={[contentShell, "py-14 sm:py-16 lg:py-[5.25rem]"]}>
     <h2 id="projects-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
       Projects
     </h2>
-    <p class="mt-4 max-w-xl text-[0.9575rem] leading-relaxed text-stone-500">
-      A couple of artefacts I still point recruiters to — one is coursework that shipped, one is a civic competition that
-      still taught me volumes about metering series.
+    <p class="mt-4 max-w-3xl text-[0.9575rem] leading-relaxed text-stone-500">
+      A pair of artefacts I still point recruiters to — one shipped as thesis/coursework, another from a civic data challenge around smart-meter telemetry.
     </p>
-    <div class="mt-10 grid gap-8 lg:gap-10">
+    <div class="mt-10 grid gap-8 md:grid-cols-2 md:gap-10 lg:gap-12 xl:gap-14">
       {
         projects.map((project) => (
           <ProjectCard project={project} />

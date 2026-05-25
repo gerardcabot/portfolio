@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { contentShell } from "../config/layout";
 import HeaderNav from "../components/HeaderNav.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
@@ -19,7 +20,9 @@ import Contact from "../components/Contact.astro";
     <Projects />
     <Contact />
   </main>
-  <footer class="border-t border-stone-800/95 px-4 py-[2.125rem] text-center font-sans text-[11px] leading-relaxed text-stone-600">
-    © {new Date().getFullYear()} Gerard Cabot Agustín — site built with Astro and Tailwind.
+  <footer class="border-t border-stone-800/95 py-[2.125rem]">
+    <p class:list={[contentShell, "text-center font-sans text-[11px] leading-relaxed text-stone-600"]}>
+      © {new Date().getFullYear()} Gerard Cabot Agustín — built with Astro and Tailwind.
+    </p>
   </footer>
 </BaseLayout>

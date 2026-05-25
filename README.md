@@ -27,7 +27,8 @@ npm run preview # serve ./dist locally
 | Skills groups | `src/data/skills.ts` |
 | GitHub / LinkedIn / email | `src/data/contact.ts` |
 | About bio copy | `src/components/About.astro` |
-| Featured book / press link bundle | `src/data/featured.ts` |
+| Featured book / Amazon link | `src/data/featured.ts` |
+| Section width / gutters | `src/config/layout.ts` (`contentShell`) |
 
 Optional: drop a photo at `public/photo.jpg` and reference it from `Hero.astro` if you later add one.
 

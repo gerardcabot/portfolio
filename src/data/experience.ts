@@ -24,7 +24,7 @@ export const roles: ExperienceItem[] = [
     timeframe: "Sep 2025 — present",
     bullets: [
       "Own durable Python backends and ingestion pipelines powering event discovery experiences at product scale.",
-      "Refactor brittle SQL-heavy paths in PostgreSQL; profile hot queries and reshape schema / batching patterns so realtime-adjacent flows stay predictable under spikes.",
+      "Refactor brittle SQL-heavy paths in PostgreSQL; profile hot queries and reshape schema / batching patterns so near-real-time flows stay predictable under spikes.",
     ],
   },
   {
@@ -33,7 +33,7 @@ export const roles: ExperienceItem[] = [
     roles: "SAP ABAP consultant / developer",
     timeframe: "Nov 2024 — Jun 2025",
     bullets: [
-      "Deliver bespoke ABAP objects and integrations inside large SAP footprints — custom business logic, extensions, and hand-over documentation for downstream teams.",
+      "Deliver bespoke ABAP objects and integrations inside large SAP footprints — custom business logic, extensions, and concise hand-off documentation for downstream teams.",
       "Partner with analysts and architects to unblock cross-module flows without inflating regression risk.",
     ],
   },

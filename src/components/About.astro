@@ -1,5 +1,6 @@
 ---
 import { arteImperceptibleBook } from "../data/featured";
+import { contentShell } from "../config/layout";
 ---
 
 <section
@@ -7,54 +8,64 @@ import { arteImperceptibleBook } from "../data/featured";
   class="scroll-mt-28 border-t border-stone-800/95 bg-[#151312]"
   aria-labelledby="about-heading"
 >
-  <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-20">
+  <div class:list={[contentShell, "py-14 sm:py-16 lg:py-20"]}>
     <h2 id="about-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
       About
     </h2>
-    <div class="mt-5 max-w-2xl space-y-5 text-[0.9625rem] leading-[1.75] text-stone-400">
-      <p>
-        I&apos;m a data scientist and software engineer focused on predictive modelling and recruiting analytics in football.
-        I care about artefacts that survive hand-off: reproducible notebooks, observable services, dashboards scouts reopen without needing fresh context every week.
-      </p>
-      <p>
-        Today that lands mainly at{" "}
-        <strong class="font-semibold text-stone-200">Levante UD</strong>{" "}(research collaborator on similarity-heavy scouting work) and at{" "}
-        <strong class="font-semibold text-stone-200">Fever</strong>, where I ship Python services and ingestion at real traffic volumes — Postgres tuning included.
-      </p>
-      <div class="space-y-4">
+    <div
+      class="mt-8 lg:grid lg:grid-cols-12 lg:gap-x-12 lg:gap-y-10 xl:gap-x-16"
+    >
+      <div class="min-w-0 space-y-5 text-[0.9625rem] leading-[1.75] text-stone-400 lg:col-span-7">
         <p>
-          Off the codebase: placing second at the{" "}
-          <strong class="font-semibold text-stone-200">Aigües de Barcelona Data Challenge</strong>{" "}and credited participation alongside Levante in Alejandro Losa Brito&apos;s{" "}
-          <a
-            class="font-semibold italic text-amber-200 underline decoration-amber-500/55 underline-offset-[3px] transition hover:text-amber-50"
-            href={arteImperceptibleBook.amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {arteImperceptibleBook.titleShort}</a>.
+          I&apos;m a data scientist and software engineer focused on predictive modelling and recruiting analytics in football.
+          I care about artefacts that survive hand-off: reproducible notebooks, observable services, dashboards that scouts
+          revisit without needing a fresh onboarding every Monday.
         </p>
-        <p class="rounded-md border border-stone-700/95 bg-[#141210]/90 px-[0.875rem] py-[0.6875rem] font-sans text-[0.85rem] leading-relaxed text-stone-500">
-          Scout-facing book on imperceptible detail in modern football —
-          paperback in Spanish (<span lang="es">scouting · match breakdown · club workflows</span>), released April&nbsp;2026.
-          Listing:{" "}
-          <a
-            class="font-semibold text-amber-200 underline decoration-amber-500/55 underline-offset-[3px] hover:text-[#fff7ed]"
-            href={arteImperceptibleBook.amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Amazon.es&nbsp;<span aria-hidden="true">·</span> ISBN&nbsp;979-1387868925
-          </a>
-          <span aria-hidden="true">&nbsp;(↗)</span>
-          .
+        <p>
+          Most of my workload sits between{" "}
+          <strong class="font-semibold text-stone-200">Levante UD</strong>{" "}(research collaborator on similarity-heavy scouting) and{" "}
+          <strong class="font-semibold text-stone-200">Fever</strong>, where I ship Python services and ingestion at sustained traffic —
+          Postgres tuning included.
         </p>
+        <div class="space-y-4">
+          <p>
+            Off the codebase: placing second at the{" "}
+            <strong class="font-semibold text-stone-200">Aigües de Barcelona Data Challenge</strong>{" "}and credited participation
+            alongside Levante in Alejandro Losa Brito&apos;s{" "}
+            <a
+              class="font-semibold italic text-amber-200 underline decoration-amber-500/55 underline-offset-[3px] transition hover:text-amber-50"
+              href={arteImperceptibleBook.amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {arteImperceptibleBook.titleShort}</a>.
+          </p>
+          <p class="rounded-md border border-stone-700/95 bg-[#141210]/90 px-[0.875rem] py-[0.6875rem] font-sans text-[0.85rem] leading-relaxed text-stone-500">
+            Scout-facing book on imperceptible detail in modern football —
+            paperback in Spanish (<span lang="es">scouting · match breakdown · club workflows</span>), released April&nbsp;2026.
+            Listing:{" "}
+            <a
+              class="font-semibold text-amber-200 underline decoration-amber-500/55 underline-offset-[3px] hover:text-[#fff7ed]"
+              href={arteImperceptibleBook.amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Amazon.es&nbsp;<span aria-hidden="true">·</span> ISBN&nbsp;979-1387868925
+            </a>
+            <span aria-hidden="true">&nbsp;(↗)</span>.
+          </p>
+        </div>
       </div>
-      <p class="border-l-2 border-amber-500/60 pl-4 text-[0.8875rem] leading-relaxed text-stone-500">
-        B.Sc. Computer Engineering (data science),{" "}
-        <strong class="font-medium text-stone-400">UPF · 2021–2025</strong>
-        · thesis graded Excellent with Honors — same lineage as{" "}
-        <em>Stars of the Future</em> listed in Projects.
-      </p>
+
+      <aside class="surface-muted rounded-lg p-6 lg:sticky lg:top-28 lg:col-span-5 lg:self-start xl:top-32" aria-label="Education snapshot">
+        <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-stone-500">Education</p>
+        <p class="mt-4 text-[0.905rem] leading-relaxed text-stone-400">
+          B.Sc. Computer Engineering (specialisation in data science),{" "}
+          <strong class="font-medium text-stone-200">Universitat Pompeu Fabra · 2021–2025</strong>
+          — thesis graded <strong class="font-medium text-stone-300">Excellent with Honours</strong>, same lineage as{" "}
+          <em class="text-stone-300">Stars of the Future</em> listed in Projects.
+        </p>
+      </aside>
     </div>
   </div>
 </section>

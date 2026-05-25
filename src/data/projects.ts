@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     title: "Stars of the Future",
     description:
-      "Automated scouting stack from my UPF thesis (Excellent + Honors): StatsBomb KPIs, an XGBoost layer for projecting young LaLiga players, Flask + React tooling, deployed for live comparisons.",
+      "Automated scouting stack from my UPF thesis (Excellent with Honours): StatsBomb KPIs, an XGBoost layer for projecting young LaLiga players, Flask + React tooling, deployed for live comparisons.",
     tags: ["React", "Flask", "XGBoost", "StatsBomb", "Vercel"],
     primaryUrl:
       "https://react-flask-psi.vercel.app/visualization",

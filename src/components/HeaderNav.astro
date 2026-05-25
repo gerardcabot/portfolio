@@ -1,12 +1,10 @@
 ---
-
+import { contentShell } from "../config/layout";
 ---
 
-<header
-  class="sticky top-0 z-50 border-b border-stone-800/95 bg-[#121110]/90"
->
+<header class="sticky top-0 z-50 border-b border-stone-800/95 bg-[#121110]/90">
   <nav
-    class="mx-auto flex max-w-3xl flex-wrap items-end justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
+    class:list={[contentShell, "flex flex-wrap items-end justify-between gap-4 py-4"]}
     aria-label="Primary"
   >
     <div class="min-w-0">
@@ -20,24 +18,12 @@
         Portfolio
       </p>
     </div>
-    <ul
-      class="flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] font-medium leading-none text-stone-400 sm:justify-end sm:text-sm"
-    >
-      <li>
-        <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#about">About</a>
-      </li>
-      <li>
-        <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#work">Experience</a>
-      </li>
-      <li>
-        <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#skills">Skills</a>
-      </li>
-      <li>
-        <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#projects">Projects</a>
-      </li>
-      <li>
-        <a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#contact">Contact</a>
-      </li>
+    <ul class="flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] font-medium leading-none text-stone-400 sm:justify-end sm:text-sm">
+      <li><a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#about">About</a></li>
+      <li><a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#work">Experience</a></li>
+      <li><a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#skills">Skills</a></li>
+      <li><a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#projects">Projects</a></li>
+      <li><a class="border-b border-transparent pb-px transition hover:border-amber-400/85 hover:text-stone-200" href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>

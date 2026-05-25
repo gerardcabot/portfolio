@@ -1,20 +1,17 @@
 ---
 import { roles } from "../data/experience";
+import { contentShell } from "../config/layout";
 ---
 
-<section
-  id="work"
-  class="scroll-mt-28 border-y border-stone-800/90"
-  aria-labelledby="work-heading"
->
-  <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-20">
+<section id="work" class="scroll-mt-28 border-y border-stone-800/90" aria-labelledby="work-heading">
+  <div class:list={[contentShell, "py-14 sm:py-16 lg:py-20"]}>
     <h2 id="work-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
       Experience
     </h2>
     <ol class="mt-10 space-y-12">
       {
         roles.map((job) => (
-          <li class="grid gap-x-10 gap-y-5 sm:[grid-template-columns:9.5rem,minmax(0,1fr)]">
+          <li class="grid gap-x-12 gap-y-5 sm:[grid-template-columns:10.5rem,minmax(0,1fr)] lg:[grid-template-columns:11.25rem,minmax(0,1fr)]">
             <p class="text-[13px] font-medium tabular-nums text-stone-500 sm:border-l sm:border-amber-500/45 sm:pl-4">
               {job.timeframe}
             </p>
