@@ -1,8 +1,8 @@
 {
   "htmlLang": "ca",
   "meta": {
-    "title": "Gerard Cabot Agustín — Portfoli",
-    "description": "Científic de dades i enginyer de programari enfocat al modelatge predictiu i l’analítica de reclutament futbolístic — amb seu a Barcelona i obert a la relocalització."
+    "title": "Gerard Cabot Agustín | Portfoli",
+    "description": "Científic de dades i enginyer de programari enfocat al modelatge predictiu i l’analítica de reclutament futbolístic, amb seu a Barcelona i obert a la relocalització."
   },
   "nav": {
     "portfolio": "Portfoli",
@@ -16,7 +16,7 @@
   "hero": {
     "roles": "Científic de dades · Enginyer de programari · Analítica futbolística",
     "location": "Resido a Barcelona · Obert a la relocalització",
-    "sub": "Modelatge, plataformes i consultes Postgres complicades quan cal — habitualment per a scouts i aficionats darrere del teló, o per al proper llançament de producte sota càrrega real.",
+    "sub": "Modelatge, plataformes i consultes Postgres complicades quan cal, habitualment per a scouts i aficionats darrere del teló, o per al proper llançament de producte sota càrrega real.",
     "ctaWork": "Feina destacada",
     "ctaContact": "Escriviu-me",
     "asideTitle": "Panorama ràpid",
@@ -34,19 +34,19 @@
     "levanteBold": "Levante UD",
     "levanteTrail": "(col·laborador de recerca en scouting amb pes de similitud) i",
     "feverBold": "Fever",
-    "p2Trail": ", on desplego serveis Python i ingestió amb trànsit sostingut — afinació de Postgres inclosa.",
+    "p2Trail": ", on desplego serveis Python i ingestió amb trànsit sostingut; afinació de Postgres inclosa.",
     "challengeLead": "Fora del repositori: segon classificat al",
     "challengeBold": "Data Challenge d’Aigües de Barcelona",
     "bookLead": "i participació reconeguda amb el Levante al llibre d’Alejandro Losa Brito",
     "bookSpanishNote": "<span lang=\"es\">scouting · desglossament de partit · fluxos del club</span>",
-    "bookAside": "Llibre pensat per a scouting sobre detall imperceptible en el futbol modern — tapa cosida en castellà (",
+    "bookAside": "Llibre pensat per a scouting sobre detall imperceptible en el futbol modern, tapa cosida en castellà (",
     "bookAsideAfter": "), publicació abril de 2026.",
     "bookListing": "Fitxa:",
     "asideEducation": "Formació",
     "eduDegree": "Grau en Enginyeria Informàtica",
     "eduSpec": "especialització en ciència de dades",
-    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021\u20132025",
-    "eduHonoursLead": "— tesi qualificada com a Excellent with Honours; mateixa línia que",
+    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021-2025",
+    "eduHonoursLead": ". Tesi qualificada com a Excellent with Honours; mateixa línia que",
     "eduProjectRef": "Stars of the Future",
     "eduProjectTrail": "a Projectes."
   },
@@ -54,7 +54,7 @@
     "heading": "Experiència",
     "jobs": [
       {
-        "timeframe": "Set 2025 \u2014 actualitat",
+        "timeframe": "Set 2025 - actualitat",
         "org": "Levante UD",
         "roles": "Científic de dades futbolístics \u00b7 col·laborador recerca",
         "location": "València · remot",
@@ -64,27 +64,27 @@
         ]
       },
       {
-        "timeframe": "Set 2025 \u2014 actualitat",
+        "timeframe": "Set 2025 - actualitat",
         "org": "Fever",
         "roles": "Enginyer de programari",
         "location": "Barcelona",
         "bullets": [
           "Serveis Python resilients i camins d’ingestió associats al descobriment d’esdeveniments sota càrrega real.",
-          "Reestructuració de rutines Postgres amb molts SQL — consultes candents, fitxadors i volums quasi en temps real."
+          "Reestructuració de rutines Postgres amb molts SQL: consultes candents, fitxadors i volums quasi en temps real."
         ]
       },
       {
-        "timeframe": "Nov 2024 \u2014 Jun 2025",
+        "timeframe": "Nov 2024 - Jun 2025",
         "org": "Viseo",
         "roles": "Consultor SAP ABAP · desenvolupador",
         "location": "Barcelona",
         "bullets": [
-          "Lliuraments ABAP a empremtes SAP grans — lògica, extensions i mans per al tram següent sense soroll.",
+          "Lliuraments ABAP a empremtes SAP grans: lògica, extensions i mans per al tram següent sense soroll.",
           "Coordinació amb arquitectura i negoci sense sobredimensionar regressions marginals."
         ]
       },
       {
-        "timeframe": "Set 2018 \u2014 Jun 2024",
+        "timeframe": "Set 2018 - Jun 2024",
         "org": "Vedruna Gràcia",
         "roles": "Entrenador en cap · bàsquet (titulació FCB)",
         "location": "Barcelona",
@@ -191,7 +191,7 @@
   },
   "projects": {
     "heading": "Projectes",
-    "intro": "Dues peces recurrents — tesi destacada més un repte cívic sobre telelectura urbana.",
+    "intro": "Dues peces recurrents: tesi destacada més un repte cívic sobre telelectura urbana.",
     "cards": [
       {
         "title": "Stars of the Future",

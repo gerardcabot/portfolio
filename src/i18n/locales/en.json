@@ -1,8 +1,8 @@
 {
   "htmlLang": "en",
   "meta": {
-    "title": "Gerard Cabot Agustín — Portfolio",
-    "description": "Data scientist and software engineer specialising in predictive modelling and football recruiting analytics — based in Barcelona and open to relocation."
+    "title": "Gerard Cabot Agustín | Portfolio",
+    "description": "Data scientist and software engineer specialising in predictive modelling and football recruiting analytics, based in Barcelona and open to relocation."
   },
   "nav": {
     "portfolio": "Portfolio",
@@ -16,7 +16,7 @@
   "hero": {
     "roles": "Data Scientist · Software Engineer · Football Analytics",
     "location": "Based in Barcelona · Open to relocation",
-    "sub": "Modelling, platforms, and the occasional messy Postgres query — usually for scouts and fans behind the scenes, or for the next product release shipping under load.",
+    "sub": "Modelling, platforms, and the occasional messy Postgres query, usually for scouts and fans behind the scenes, or for the next product release shipping under load.",
     "ctaWork": "Selected work",
     "ctaContact": "Write me",
     "asideTitle": "At a glance",
@@ -34,19 +34,19 @@
     "levanteBold": "Levante UD",
     "levanteTrail": "(research collaborator on similarity-heavy scouting) and",
     "feverBold": "Fever",
-    "p2Trail": ", where I ship Python services and ingestion at sustained traffic — Postgres tuning included.",
+    "p2Trail": ", where I ship Python services and ingestion at sustained traffic; Postgres tuning included.",
     "challengeLead": "Outside the codebase: second place at the",
     "challengeBold": "Aig\u00fces de Barcelona Data Challenge",
     "bookLead": "and credited participation alongside Levante in Alejandro Losa Brito's",
     "bookSpanishNote": "<span lang=\"es\">scouting · match breakdown · club workflows</span>",
-    "bookAside": "Scout-facing book on imperceptible detail in modern football — paperback in Spanish (",
+    "bookAside": "Scout-facing book on imperceptible detail in modern football, paperback in Spanish (",
     "bookAsideAfter": "), released April 2026.",
     "bookListing": "Listing:",
     "asideEducation": "Education",
     "eduDegree": "B.Sc. Computer Engineering",
     "eduSpec": "specialisation in data science",
-    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021\u20132025",
-    "eduHonoursLead": "\u2014 thesis graded Excellent with Honours; same lineage as",
+    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021-2025",
+    "eduHonoursLead": ". Thesis graded Excellent with Honours; same lineage as",
     "eduProjectRef": "Stars of the Future",
     "eduProjectTrail": "in Projects."
   },
@@ -54,7 +54,7 @@
     "heading": "Experience",
     "jobs": [
       {
-        "timeframe": "Sep 2025 \u2014 present",
+        "timeframe": "Sep 2025 - present",
         "org": "Levante UD",
         "roles": "Football data scientist \u00b7 research collaborator",
         "location": "Valencia \u00b7 remote",
@@ -64,27 +64,27 @@
         ]
       },
       {
-        "timeframe": "Sep 2025 \u2014 present",
+        "timeframe": "Sep 2025 - present",
         "org": "Fever",
         "roles": "Software engineer",
         "location": "Barcelona",
         "bullets": [
           "Own durable Python services and ingestion paths that back event-discovery experiences under real product load.",
-          "Refactor SQL-heavy Postgres paths\u2014profile hot queries and reshape schemas or batch boundaries so near-real-time flows stay predictable during spikes."
+          "Refactor SQL-heavy Postgres paths: profile hot queries and reshape schemas or batch boundaries so near-real-time flows stay predictable during spikes."
         ]
       },
       {
-        "timeframe": "Nov 2024 \u2014 Jun 2025",
+        "timeframe": "Nov 2024 - Jun 2025",
         "org": "Viseo",
         "roles": "SAP ABAP consultant \u002f developer",
         "location": "Barcelona",
         "bullets": [
-          "Deliver bespoke ABAP objects inside large footprints\u2014custom logic, integrations, extensions, and succinct hand-off documentation for downstream squads.",
+          "Deliver bespoke ABAP objects inside large footprints: custom logic, integrations, extensions, and succinct hand-off documentation for downstream squads.",
           "Work with architects and analysts to unblock cross-module flows without ballooning regression risk."
         ]
       },
       {
-        "timeframe": "Sep 2018 \u2014 Jun 2024",
+        "timeframe": "Sep 2018 - Jun 2024",
         "org": "Vedruna Gr\u00e0cia",
         "roles": "Head basketball coach \u00b7 FCB certified",
         "location": "Barcelona",
@@ -198,7 +198,7 @@
   },
   "projects": {
     "heading": "Projects",
-    "intro": "Two artefacts recruiters still hear about\u2014one shipped as honours thesis coursework, another from a metropolitan smart-meter anomaly challenge.",
+    "intro": "Two artefacts recruiters still hear about: one shipped as honours thesis coursework, another from a metropolitan smart-meter anomaly challenge.",
     "cards": [
       {
         "title": "Stars of the Future",
@@ -221,7 +221,7 @@
   },
   "contact": {
     "heading": "Contact",
-    "intro": "For hiring scopes, scouting analytics partnerships, or engineering conversations \u2014 email is quickest. I respond in Catalan, Spanish, or English in the voice you wrote with.",
+    "intro": "For hiring scopes, scouting analytics partnerships, or engineering conversations, email is quickest. I respond in Catalan, Spanish, or English in the voice you wrote with.",
     "channels": "Channels",
     "emailLabel": "Email \u00b7",
     "compose": "Compose email",

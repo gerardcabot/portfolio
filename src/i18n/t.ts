@@ -1,5 +1,5 @@
 /**
- * Astro-friendly dot-path lookup — use as `t(messages, 'nav.about')`.
+ * Astro-friendly dot-path lookup. Use as `t(messages, 'nav.about')`.
  * Mirrors a simple `translate` helper; no Vue-style pipe runtime.
  */
 export function t(root: Record<string, unknown>, path: string): string {

@@ -1,8 +1,8 @@
-# Gerard Cabot — Portfolio
+# Gerard Cabot: portfolio
 
 **Live site:** https://gerardcabot.vercel.app
 
-Single-page developer portfolio built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). Static output only — suitable for **free** hosting.
+Multi-language developer portfolio (`/en`, `/es`, `/ca`, `/fr`) built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com). Static output only, suited to **free** hosting.
 
 **Source repo:** https://github.com/gerardcabot/portfolio
 
@@ -23,10 +23,9 @@ npm run preview # serve ./dist locally
 
 | What | Where |
 |------|--------|
-| Projects (titles, URLs, tags) | `src/data/projects.ts` |
-| Skills groups | `src/data/skills.ts` |
+| All section copy per language | `src/i18n/locales/` (`en.json`, `es.json`, `ca.json`, `fr.json`) |
+| Projects (URLs, tags, icons) | `src/data/projectSeeds.ts` + hydrated labels from locale JSON |
 | GitHub / LinkedIn / email | `src/data/contact.ts` |
-| About bio copy | `src/components/About.astro` |
 | Featured book / Amazon link | `src/data/featured.ts` |
 | Section width / gutters | `src/config/layout.ts` (`contentShell`) |
 
@@ -50,10 +49,10 @@ Optional: drop a photo at `public/photo.jpg` and reference it from `Hero.astro` 
 
 2. **Import / link the repo in Vercel**
 
-   Go to [vercel.com/new](https://vercel.com/new). This project deploys statically with **Build Command**: `astro build`, **Output**: `dist`. Name the project `gerardcabot` → the site resolves to **`https://gerardcabot.vercel.app`**.
+   Go to [vercel.com/new](https://vercel.com/new). This project deploys statically with **Build Command**: `astro build`, **Output**: `dist`. Name the project `gerardcabot` so the site resolves to **`https://gerardcabot.vercel.app`**.
 
 ### Git-connected deploys
 
 If linking `gerardcabot/portfolio` fails with **Login Connection** errors, enable GitHub for your Vercel account under login connections ([docs](https://vercel.com/docs/accounts/create-an-account#login-methods-and-connections)), then reconnect the repository in Project → Settings → Git.
 
-Later you can attach a purchased domain under **Project → Settings → Domains** — hosting stays on the Hobby (free) plan.
+Later you can attach a purchased domain under **Project → Settings → Domains**. Hosting stays on the Hobby (free) plan.

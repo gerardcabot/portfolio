@@ -1,5 +1,5 @@
 /**
- * Shared horizontal shell (~1152–1280px) so sections align and use widescreen space
+ * Shared horizontal shell (~1152 to 1280px) so sections align and use widescreen space
  * without running line-length off the cliff.
  */
 export const contentShell =

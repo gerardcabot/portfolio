@@ -1,8 +1,8 @@
 {
   "htmlLang": "es",
   "meta": {
-    "title": "Gerard Cabot Agustín — Portafolio",
-    "description": "Científico de datos e ingeniero de software centrado en modelado predictivo y analítica de reclutamiento futbolístico — con base en Barcelona y abierto al reubicación."
+    "title": "Gerard Cabot Agustín | Portafolio",
+    "description": "Científico de datos e ingeniero de software centrado en modelado predictivo y analítica de reclutamiento futbolístico, con base en Barcelona y abierto a la reubicación."
   },
   "nav": {
     "portfolio": "Portafolio",
@@ -16,7 +16,7 @@
   "hero": {
     "roles": "Científico de datos · Ingeniero de software · Analítica futbolística",
     "location": "Resido en Barcelona · Abierto a relocalización",
-    "sub": "Modelado, plataformas y consultas PostgreSQL complicadas cuando toca — normalmente para scouts, aficionados tras bambalinas o lanzamientos bajo carga real.",
+    "sub": "Modelado, plataformas y consultas PostgreSQL complicadas cuando toca, normalmente para scouts, aficionados tras bambalinas o lanzamientos bajo carga real.",
     "ctaWork": "Trabajos",
     "ctaContact": "Escríbeme",
     "asideTitle": "Resumen rápido",
@@ -34,19 +34,19 @@
     "levanteBold": "Levante UD",
     "levanteTrail": "(investigación en scouting con similitud) y",
     "feverBold": "Fever",
-    "p2Trail": ", donde despliego servicios Python e ingesta de tráfico sostenido — afinado de Postgres incluido.",
+    "p2Trail": ", donde despliego servicios Python e ingesta de tráfico sostenido; afinado de Postgres incluido.",
     "challengeLead": "Fuera del código: segundo puesto en el",
     "challengeBold": "Desafío de Datos del Aig\u00fces de Barcelona",
     "bookLead": "y participación acreditada junto a Levante en",
     "bookSpanishNote": "<span lang=\"es\">scouting · ruptura de partido · flujos club</span>",
-    "bookAside": "Libro práctico sobre el detalle imperceptible — edición en papel en castellano (",
+    "bookAside": "Libro práctico sobre el detalle imperceptible, edición en papel en castellano (",
     "bookAsideAfter": "), publicado en abril de 2026.",
     "bookListing": "Ficha:",
     "asideEducation": "Formación",
     "eduDegree": "Grado en Ingeniería Informática",
     "eduSpec": "especialidad en ciencia de datos",
-    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021\u20132025",
-    "eduHonoursLead": "— tesis calificada Excellent with Honours (matrícula); misma línea que",
+    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021-2025",
+    "eduHonoursLead": ". Tesis calificada Excellent with Honours (matrícula); misma línea que",
     "eduProjectRef": "Stars of the Future",
     "eduProjectTrail": "en Proyectos."
   },
@@ -54,7 +54,7 @@
     "heading": "Experiencia",
     "jobs": [
       {
-        "timeframe": "Sept 2025 \u2014 actualidad",
+        "timeframe": "Sept 2025 - actualidad",
         "org": "Levante UD",
         "roles": "Científico de datos deportivos \u00b7 colaborador investigación",
         "location": "Valencia · remoto",
@@ -64,17 +64,17 @@
         ]
       },
       {
-        "timeframe": "Sept 2025 \u2014 actualidad",
+        "timeframe": "Sept 2025 - actualidad",
         "org": "Fever",
         "roles": "Ingeniero de software",
         "location": "Barcelona",
         "bullets": [
           "Servicios Python resilientes e ingesta detrás de discovery de eventos bajo carga real.",
-          "Reestructuración de rutas Postgres con mucho SQL — perfiles, esquemas y agrupación que aguanten picos casi en tiempo real."
+          "Reestructuración de rutas Postgres con mucho SQL: perfiles, esquemas y agrupación que aguanten picos casi en tiempo real."
         ]
       },
       {
-        "timeframe": "Nov 2024 \u2014 Jun 2025",
+        "timeframe": "Nov 2024 - Jun 2025",
         "org": "Viseo",
         "roles": "Consultor \u002f desarrollador SAP ABAP",
         "location": "Barcelona",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "timeframe": "Sept 2018 \u2014 Jun 2024",
+        "timeframe": "Sept 2018 - Jun 2024",
         "org": "Vedruna Gràcia",
         "roles": "Head coach baloncesto \u00b7 titulación FCB",
         "location": "Barcelona",
@@ -191,7 +191,7 @@
   },
   "projects": {
     "heading": "Proyectos",
-    "intro": "Dos piezas recurrentes — tesis laureada más un reto ciudadano sobre telemetría de consumo.",
+    "intro": "Dos piezas recurrentes: tesis laureada más un reto ciudadano sobre telemetría de consumo.",
     "cards": [
       {
         "title": "Stars of the Future",

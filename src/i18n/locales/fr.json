@@ -1,8 +1,8 @@
 {
   "htmlLang": "fr",
   "meta": {
-    "title": "Gerard Cabot Agustín — Portfolio",
-    "description": "Scientifique des données et ingénieur logiciel spécialisé en modélisation prédictive et analytique football — domicilié à Barcelone et ouvert à la relocation."
+    "title": "Gerard Cabot Agustín | Portfolio",
+    "description": "Scientifique des données et ingénieur logiciel spécialisé en modélisation prédictive et analytique football, domicilié à Barcelone et ouvert à la relocation."
   },
   "nav": {
     "portfolio": "Portfolio",
@@ -16,7 +16,7 @@
   "hero": {
     "roles": "Data scientist · Ingénieur logiciel · Analytics football",
     "location": "Basé à Barcelone · Ouvert aux relocalisations raisonnables",
-    "sub": "Modélisation, plateformes et grosses requêtes Postgres quand il le faut — souvent pour des recruteurs et des fans backstage, ou pour la prochaine livraison produit sous charge.",
+    "sub": "Modélisation, plateformes et grosses requêtes Postgres quand il le faut, souvent pour des recruteurs et des fans backstage, ou pour la prochaine livraison produit sous charge.",
     "ctaWork": "Travaux",
     "ctaContact": "Écrivez-moi",
     "asideTitle": "Synthèse",
@@ -34,19 +34,19 @@
     "levanteBold": "Levante UD",
     "levanteTrail": "(collaborateur recherche scouting centré similarité) et",
     "feverBold": "Fever",
-    "p2Trail": ", où j’expose des services Python et de l’ingestion à flux soutenu — réglages Postgres inclus.",
+    "p2Trail": ", où j’expose des services Python et de l’ingestion à flux soutenu; réglages Postgres inclus.",
     "challengeLead": "Autre chantier : deuxième prix au",
     "challengeBold": "Data Challenge des Aigües de Barcelone",
     "bookLead": "plus participation reconnaissante auprès du Levante dans l’ouvrage d’Alejandro Losa Brito",
     "bookSpanishNote": "<span lang=\"es\">scouting · décryptage tactique · démarches club</span>",
-    "bookAside": "Livre pour le scouting sur le détail imperceptible dans le jeu moderne — édition poche espagnole (",
+    "bookAside": "Livre pour le scouting sur le détail imperceptible dans le jeu moderne, édition poche espagnole (",
     "bookAsideAfter": "), parution avril 2026.",
     "bookListing": "Fiche :",
     "asideEducation": "Formation",
     "eduDegree": "Licence Ingénieur informatique",
     "eduSpec": "spécialisation data science",
-    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021\u20132025",
-    "eduHonoursLead": "— mémoire noté Excellent with Honours ; même lignée que",
+    "eduSchool": "Universitat Pompeu Fabra \u00b7 2021-2025",
+    "eduHonoursLead": ". Mémoire noté Excellent with Honours ; même lignée que",
     "eduProjectRef": "Stars of the Future",
     "eduProjectTrail": "sous Projets."
   },
@@ -54,17 +54,17 @@
     "heading": "Expérience",
     "jobs": [
       {
-        "timeframe": "Sep 2025 \u2014 présent",
+        "timeframe": "Sep 2025 - présent",
         "org": "Levante UD",
         "roles": "Data scientist football \u00b7 collaborateur recherche",
         "location": "Valence · remote",
         "bullets": [
           "Similar Brain : comparer joueurs à partir de la volonté passe plutôt qu’un brut de pourcentages, pour profiler des mouvements de recrutement.",
-          "Emballages de sortie similarité revisitables — fiches liste courte et revues après match au récit tactique mieux fichu."
+          "Emballages de sortie similarité revisitables: fiches liste courte et revues après match au récit tactique mieux fichu."
         ]
       },
       {
-        "timeframe": "Sep 2025 \u2014 présent",
+        "timeframe": "Sep 2025 - présent",
         "org": "Fever",
         "roles": "Ingénieur logiciel",
         "location": "Barcelone",
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "timeframe": "Nov 2024 \u2014 Jun 2025",
+        "timeframe": "Nov 2024 - Jun 2025",
         "org": "Viseo",
         "roles": "Consultant \u002f développeur SAP ABAP",
         "location": "Barcelone",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "timeframe": "Sep 2018 \u2014 Jun 2024",
+        "timeframe": "Sep 2018 - Jun 2024",
         "org": "Vedruna Gràcia",
         "roles": "Head coach basket · titre FCB",
         "location": "Barcelone",
@@ -191,7 +191,7 @@
   },
   "projects": {
     "heading": "Projets",
-    "intro": "Deux éléments encore cités au fil des entretiens — un mémoire couronné, un marathon data citadin sur télérelève.",
+    "intro": "Deux éléments encore cités au fil des entretiens: un mémoire couronné, un marathon data citadin sur télérelève.",
     "cards": [
       {
         "title": "Stars of the Future",

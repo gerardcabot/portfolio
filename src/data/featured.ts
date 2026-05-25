@@ -1,4 +1,4 @@
-/** Public-facing highlight — paperback listing on Amazon España */
+/** Public-facing highlight: paperback listing on Amazon España */
 export const arteImperceptibleBook = {
   titleShort: "El Arte de lo Imperceptible",
   amazonUrl:
