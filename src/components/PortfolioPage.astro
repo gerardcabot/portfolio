@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderNav from "./HeaderNav.astro";
+import Hero from "./Hero.astro";
+import About from "./About.astro";
+import Experience from "./Experience.astro";
+import Skills from "./Skills.astro";
+import Projects from "./Projects.astro";
+import Contact from "./Contact.astro";
+import { contentShell } from "../config/layout";
+import type { Locale, Messages } from "../i18n/locales";
+
+interface Props {
+  locale: Locale;
+  messages: Messages;
+}
+
+const { locale, messages } = Astro.props;
+---
+
+<BaseLayout locale={locale} messages={messages}>
+  <HeaderNav locale={locale} messages={messages} />
+  <main class="relative">
+    <Hero messages={messages} locale={locale} />
+    <About messages={messages} />
+    <Experience messages={messages} />
+    <Skills messages={messages} />
+    <Projects messages={messages} />
+    <Contact messages={messages} />
+  </main>
+  <footer class="border-t border-stone-800/95 py-[2.125rem]">
+    <p class:list={[contentShell, "text-center font-sans text-[11px] leading-relaxed text-stone-600"]}>
+      © {new Date().getFullYear()} Gerard Cabot Agustín · {messages.footer}
+    </p>
+  </footer>
+</BaseLayout>

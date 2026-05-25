@@ -1,0 +1,9 @@
+---
+import PortfolioPage from "../../components/PortfolioPage.astro";
+import { messagesByLocale } from "../../i18n/locales";
+
+const locale = "en";
+const messages = messagesByLocale[locale];
+---
+
+<PortfolioPage locale={locale} messages={messages} />
