@@ -3,27 +3,21 @@ import ProjectCard from "./ProjectCard.astro";
 import { projects } from "../data/projects";
 ---
 
-<section
-  id="projects"
-  class="scroll-mt-28 mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:pb-24 lg:pt-16"
-  aria-labelledby="projects-heading"
->
-  <h2
-    id="projects-heading"
-    class="text-xs font-semibold uppercase tracking-[0.2em] text-teal-300/90"
-  >
-    Projects
-  </h2>
-  <p class="mt-3 max-w-2xl text-slate-400">
-    Selected work spanning full-stack analytics, applied ML, and data products.
-    Tap a card to open the destination you care about — demos live on separate
-    pages.
-  </p>
-  <div class="mt-10 grid gap-8 md:grid-cols-2">
-    {
-      projects.map((project) => (
-        <ProjectCard project={project} />
-      ))
-    }
+<section id="projects" class="scroll-mt-28 bg-[#151312]" aria-labelledby="projects-heading">
+  <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-[5.25rem]">
+    <h2 id="projects-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
+      Projects
+    </h2>
+    <p class="mt-4 max-w-xl text-[0.9575rem] leading-relaxed text-stone-500">
+      A couple of artefacts I still point recruiters to — one is coursework that shipped, one is a civic competition that
+      still taught me volumes about metering series.
+    </p>
+    <div class="mt-10 grid gap-8 lg:gap-10">
+      {
+        projects.map((project) => (
+          <ProjectCard project={project} />
+        ))
+      }
+    </div>
   </div>
 </section>

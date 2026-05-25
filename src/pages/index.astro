@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderNav from "../components/HeaderNav.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
 import Skills from "../components/Skills.astro";
 import Projects from "../components/Projects.astro";
 import Contact from "../components/Contact.astro";
@@ -13,14 +14,12 @@ import Contact from "../components/Contact.astro";
   <main class="relative">
     <Hero />
     <About />
+    <Experience />
     <Skills />
     <Projects />
     <Contact />
   </main>
-  <footer class="border-t border-white/5 px-4 py-8 text-center text-xs text-slate-500">
-    © {new Date().getFullYear()} Gerard Cabot. Built with{" "}
-    <a class="underline decoration-teal-500/35 underline-offset-2 hover:text-slate-300" href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a>
-    &nbsp;+
-    <a class="underline decoration-teal-500/35 underline-offset-2 hover:text-slate-300" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">&nbsp;Tailwind</a>.
+  <footer class="border-t border-stone-800/95 px-4 py-[2.125rem] text-center font-sans text-[11px] leading-relaxed text-stone-600">
+    © {new Date().getFullYear()} Gerard Cabot Agustín — static site cobbled together with Astro + Tailwind. Not stock advice.
   </footer>
 </BaseLayout>

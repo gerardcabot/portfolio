@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     title: "Stars of the Future",
     description:
-      "Full-stack football analytics platform with ML career-potential predictions for U-21 LaLiga talents — interactive viz, XGBoost, and StatsBomb Open Data.",
+      "Automated scouting stack from my UPF thesis (Excellent + Honors): StatsBomb KPIs, an XGBoost layer for projecting young LaLiga players, Flask + React tooling, deployed for live comparisons.",
     tags: ["React", "Flask", "XGBoost", "StatsBomb", "Vercel"],
     primaryUrl:
       "https://react-flask-psi.vercel.app/visualization",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     description:
       "Anomaly detection in smart-meter telelectura consumption patterns among participants in Barcelona’s metropolitan water ecosystem.",
     tags: ["Python", "Machine Learning", "Time series", "Anomaly detection"],
-    highlight: "2nd prize — AB Data Challenge",
+    highlight: "Second prize · AB Data Challenge",
     primaryUrl: "https://youtu.be/YW85r934Krg",
     links: [
       {

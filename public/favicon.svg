@@ -1,10 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="ttl">
-  <title id="ttl">Gerard Cabot monogram</title>
-  <rect width="64" height="64" rx="14" fill="#0f172a" />
-  <rect x="1" y="1" width="62" height="62" rx="13" stroke="#2dd4bf" stroke-opacity="0.45" stroke-width="1.25" />
-  <path
-    fill="#5eead4"
-    d="M18 18h8l8 12 8-12h8v28h-7V30l-6.5 9.5h-.1L22 30v16h-4V18Z"
-    opacity="0.95"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Gerard Cabot Agustín</title>
+  <rect width="64" height="64" rx="10" fill="#171310" stroke="#b45309" stroke-opacity="0.55" stroke-width="1" />
+  <path fill="#fbbf24" d="M36 42V22l-10 28V30l-6-8h14l6 8 6-18Z" opacity="0.96" />
 </svg>

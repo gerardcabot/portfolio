@@ -1,0 +1,42 @@
+---
+import { roles } from "../data/experience";
+---
+
+<section
+  id="work"
+  class="scroll-mt-28 border-y border-stone-800/90"
+  aria-labelledby="work-heading"
+>
+  <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-20">
+    <h2 id="work-heading" class="font-display text-[1.875rem] font-semibold tracking-tight text-[#fcf6ee]">
+      Experience
+    </h2>
+    <ol class="mt-10 space-y-12">
+      {
+        roles.map((job) => (
+          <li class="grid gap-x-10 gap-y-5 sm:[grid-template-columns:9.5rem,minmax(0,1fr)]">
+            <p class="text-[13px] font-medium tabular-nums text-stone-500 sm:border-l sm:border-amber-500/45 sm:pl-4">
+              {job.timeframe}
+            </p>
+            <article class="min-w-0">
+              <h3 class="font-display text-lg font-semibold text-[#f3ece3]">{job.org}</h3>
+              <p class="mt-1 text-[13px] font-medium uppercase tracking-[0.14em] text-stone-500">
+                {job.roles}
+              </p>
+              <p class="mt-1 text-sm text-stone-500">{job.location}</p>
+              {job.bullets?.length ? (
+                <ul class="mt-4 list-none space-y-3 text-[15px] leading-relaxed text-stone-400">
+                  {job.bullets?.map((b) => (
+                    <li class="relative ps-6 before:pointer-events-none before:absolute before:left-2 before:top-[0.55em] before:h-1 before:w-1 before:rounded-[1px] before:bg-stone-500">
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </article>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

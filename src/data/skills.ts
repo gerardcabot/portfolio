@@ -1,3 +1,4 @@
+/** Groupings mirror the CV Technical Skills blocks */
 export type SkillGroup = {
   category: string;
   items: string[];
@@ -5,25 +6,35 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: "Languages",
-    items: ["Python", "JavaScript", "TypeScript", "SQL"],
-  },
-  {
-    category: "Frontend",
-    items: ["React", "Astro", "HTML / CSS", "Tailwind CSS"],
-  },
-  {
-    category: "Backend & APIs",
-    items: ["Flask", "REST APIs", "Pydantic", "GitHub Actions"],
-  },
-  {
-    category: "Data & ML",
+    category: "Machine learning",
     items: [
-      "Pandas",
-      "scikit-learn",
+      "Python",
+      "PyTorch",
+      "TensorFlow",
       "XGBoost",
-      "Time-series analysis",
-      "Visualization",
+      "Statistical modeling",
+      "Clustering & regression",
+      "Time series",
+      "Optimization",
     ],
+  },
+  {
+    category: "Data engineering",
+    items: [
+      "SQL · PostgreSQL, MySQL",
+      "ETL pipelines",
+      "Docker",
+      "Git · CI/CD",
+      "Linux & Bash",
+      "Web scraping",
+    ],
+  },
+  {
+    category: "Product & viz",
+    items: ["Streamlit", "Tableau", "Power BI", "FastAPI", "Flask", "React"],
+  },
+  {
+    category: "Football analytics",
+    items: ["StatsBomb", "Opta", "Tracking", "xG · xT · VAEP", "MPLSoccer"],
   },
 ];
