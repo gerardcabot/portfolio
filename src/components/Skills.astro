@@ -8,18 +8,17 @@ import { skillGroups } from "../data/skills";
       Skills &amp; tooling
     </h2>
     <p class="mt-4 max-w-2xl text-[0.9575rem] leading-relaxed text-stone-500">
-      Taken almost verbatim from the CV grouping — pruned wherever it got too ornamental. If this drifts out of sync,{" "}
-      <code class="rounded-sm border border-stone-700 bg-stone-950/80 px-1.5 py-0.5 text-[0.8375rem] text-amber-200/90">src/data/skills.ts</code>{" "}is where to edit.
+      Compressed snapshot of the CV stack and the tools that keep surfacing in shipping work — research spikes, Fever-scale backends, thesis code, and the earlier enterprise chapter.
     </p>
-    <div class="mt-10 grid gap-6 sm:grid-cols-2">
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {
         skillGroups.map((group) => (
-          <div class="surface-muted rounded-lg p-[1rem_1rem_1.05rem]">
-            <h3 class="text-[13px] font-semibold uppercase tracking-[0.1em] text-stone-500">{group.category}</h3>
+          <div class="surface-muted rounded-lg p-[1rem_1rem_1.05rem] lg:col-span-1">
+            <h3 class="text-[13px] font-semibold uppercase tracking-[0.08em] text-stone-500">{group.category}</h3>
             <ul class="mt-4 flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <li>
-                  <span class="rounded border border-stone-700/95 bg-[#141210] px-2.5 py-1 text-[12.5px] font-medium tracking-tight text-stone-300">
+                  <span class="rounded-[2px] border border-stone-700/95 bg-[#141210] px-2.5 py-1 text-[12.5px] font-medium tracking-tight text-stone-300">
                     {item}
                   </span>
                 </li>

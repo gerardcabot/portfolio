@@ -1,4 +1,5 @@
-/** Groupings mirror the CV Technical Skills blocks */
+/** Groups align with Gerard’s CV Technical Skills plus day-to-day work (PostgreSQL tuning, similarity modelling, ABAP tenure). */
+
 export type SkillGroup = {
   category: string;
   items: string[];
@@ -6,35 +7,44 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: "Machine learning",
+    category: "Inference & modelling",
     items: [
-      "Python",
+      "Python · NumPy / Pandas",
       "PyTorch",
       "TensorFlow",
-      "XGBoost",
-      "Statistical modeling",
-      "Clustering & regression",
+      "scikit-learn",
+      "XGBoost · gradient boosting",
+      "Regression · clustering",
       "Time series",
-      "Optimization",
+      "Statistical modelling · optimisation",
+      "Embedding · similarity architectures",
     ],
   },
   {
-    category: "Data engineering",
+    category: "Data engineering · platforms",
     items: [
-      "SQL · PostgreSQL, MySQL",
-      "ETL pipelines",
+      "SQL · PostgreSQL · MySQL",
+      "ETL & batch / streaming ingestion",
+      "Linux · Bash · Git · CI/CD",
       "Docker",
-      "Git · CI/CD",
-      "Linux & Bash",
+      "REST APIs · service boundaries",
       "Web scraping",
     ],
   },
   {
-    category: "Product & viz",
-    items: ["Streamlit", "Tableau", "Power BI", "FastAPI", "Flask", "React"],
+    category: "APIs · dashboards · frontend",
+    items: ["FastAPI", "Flask", "Pydantic", "React", "JavaScript (ES6+)", "Streamlit", "Tableau", "Power BI"],
   },
   {
-    category: "Football analytics",
-    items: ["StatsBomb", "Opta", "Tracking", "xG · xT · VAEP", "MPLSoccer"],
+    category: "Football analytics stack",
+    items: ["StatsBomb", "Opta", "Tracking & fused sequences", "xG · xT · VAEP", "PySport", "matplotlib · MPLSoccer"],
+  },
+  {
+    category: "Scale & adjacent roles",
+    items: [
+      "PostgreSQL profiling & tuning (latency / scale)",
+      "SAP ABAP (enterprise implementations)",
+      "Scouting · recruitment workflows",
+    ],
   },
 ];
