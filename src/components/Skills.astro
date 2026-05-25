@@ -1,0 +1,40 @@
+---
+import { skillGroups } from "../data/skills";
+---
+
+<section
+  id="skills"
+  class="scroll-mt-28 mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:py-24"
+  aria-labelledby="skills-heading"
+>
+  <h2
+    id="skills-heading"
+    class="text-xs font-semibold uppercase tracking-[0.2em] text-teal-300/90"
+  >
+    Skills
+  </h2>
+  <p class="mt-3 max-w-2xl text-slate-400">
+    A concise snapshot of stacks and domains I tend to ship with — adjust in{" "}
+    <code class="text-teal-200/90">src/data/skills.ts</code>.
+  </p>
+  <div
+    class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+  >
+    {
+      skillGroups.map((group) => (
+        <div class="glass-card p-5">
+          <h3 class="text-sm font-semibold text-white">{group.category}</h3>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {group.items.map((item) => (
+              <li>
+                <span class="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 ring-1 ring-white/10">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</section>
