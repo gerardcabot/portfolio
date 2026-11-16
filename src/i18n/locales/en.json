@@ -19,13 +19,14 @@
     "sub": "Modelling, platforms, and the occasional messy Postgres query, usually for scouts and fans behind the scenes, or for the next product release shipping under load.",
     "ctaWork": "Projects & demos",
     "ctaContact": "Write me",
+    "ctaCv": "Download CV",
     "asideTitle": "At a glance",
     "locationLabel": "Location",
     "locationValue": "Barcelona, Spain",
     "languagesLabel": "Languages",
     "languagesValue": "Spanish · Catalan (native), English (C1), French (A2)",
     "focusLabel": "Current focus",
-    "focusPlain": "Football Data Scientist research collaborator at Levante UD; durable Python ingestion and Postgres work at Fever for product-scale workloads."
+    "focusPlain": "Sports data scientist at Dinamo Bucharest (part-time, remote) and research collaborator at Levante UD; durable Python ingestion and Postgres work at Fever for product-scale workloads."
   },
   "about": {
     "heading": "About",
@@ -54,12 +55,22 @@
     "heading": "Experience",
     "jobs": [
       {
+        "timeframe": "Jun 2026 - present",
+        "org": "Dinamo Bucharest",
+        "roles": "Sports data scientist · part-time",
+        "location": "Remote",
+        "bullets": [
+          "Translate the coaching staff's tactical questions into actionable metrics using tracking and event data.",
+          "Develop and validate predictive models and reproducible data pipelines to evaluate player performance and model uncertainty."
+        ]
+      },
+      {
         "timeframe": "Sep 2025 - present",
         "org": "Levante UD",
         "roles": "Football data scientist \u00b7 research collaborator",
         "location": "Valencia \u00b7 remote",
         "bullets": [
-          "Similar Brain research, shipped as Decision Twins: comparing players by the passing decisions they make in the same situations rather than blunt completion percentages, powering likeness workflows for recruitment cycles.",
+          "Decision Twins: a private scouting tool built with Levante UD's Head of Data that compares players by the passing decisions they make in the same situations rather than blunt completion percentages, supporting recruitment cycles.",
           "Packaging similarity outputs so scouts revisit them: exploratory shortlist profiles alongside post-match reviews that tighten tactical narratives."
         ]
       },
@@ -193,7 +204,7 @@
   },
   "projects": {
     "heading": "Projects",
-    "intro": "Three artefacts recruiters still hear about: a private scouting tool built with Levante UD, one shipped as honours thesis coursework, and another from a metropolitan smart-meter anomaly challenge.",
+    "intro": "Three projects recruiters still hear about: a private scouting tool built with Levante UD, my honours thesis project, and a metropolitan smart-meter anomaly detection challenge.",
     "cards": [
       {
         "title": "Decision Twins",
@@ -209,7 +220,7 @@
       },
       {
         "title": "Aig\u00fces de Barcelona Data Challenge",
-        "description": "Anomaly detection on telelectura smart-meter footprints across Barcelona\u2019s metropolitan water cohort.",
+        "description": "Anomaly detection on smart water-meter readings (time series) across Barcelona’s metropolitan area.",
         "highlight": "Second prize \u00b7 AB Data Challenge",
         "linkLabels": ["Demo video", "Press article"]
       }
