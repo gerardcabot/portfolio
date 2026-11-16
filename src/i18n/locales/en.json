@@ -59,7 +59,7 @@
         "roles": "Football data scientist \u00b7 research collaborator",
         "location": "Valencia \u00b7 remote",
         "bullets": [
-          "Similar Brain research: comparing players through passing intent (what they chose on the pitch) rather than blunt completion percentages, powering likeness workflows for recruitment cycles.",
+          "Similar Brain research, shipped as Decision Twins: comparing players by the passing decisions they make in the same situations rather than blunt completion percentages, powering likeness workflows for recruitment cycles.",
           "Packaging similarity outputs so scouts revisit them: exploratory shortlist profiles alongside post-match reviews that tighten tactical narratives."
         ]
       },
@@ -193,8 +193,14 @@
   },
   "projects": {
     "heading": "Projects",
-    "intro": "Two artefacts recruiters still hear about: one shipped as honours thesis coursework, another from a metropolitan smart-meter anomaly challenge.",
+    "intro": "Three artefacts recruiters still hear about: a private scouting tool built with Levante UD, one shipped as honours thesis coursework, and another from a metropolitan smart-meter anomaly challenge.",
     "cards": [
+      {
+        "title": "Decision Twins",
+        "description": "Private scouting tool built with Levante UD that finds players who make the same passing decision in the same situation. A graph neural network (GATv2) reads each pass in StatsBomb 360 context, with success criteria fixed before seeing results and twin lists that predicted held-out decisions better than a context-similarity baseline.",
+        "highlight": "Built with Levante UD · private tool",
+        "linkLabels": ["LinkedIn post"]
+      },
       {
         "title": "Stars of the Future",
         "description": "Automated scouting stack from my UPF thesis (Excellent with Honours): StatsBomb KPIs, XGBoost for young LaLiga prospects, Flask + React services, deployed for live comparisons.",
@@ -216,7 +222,7 @@
   },
   "contact": {
     "heading": "Contact",
-    "intro": "For hiring scopes, scouting analytics partnerships, or engineering conversations, email is quickest. I respond in Catalan, Spanish, or English in the voice you wrote with.",
+    "intro": "Three artefacts recruiters still hear about: a private scouting tool built with Levante UD, one shipped as honours thesis coursework, and another from a metropolitan smart-meter anomaly challenge.",
     "channels": "Channels",
     "emailLabel": "Email \u00b7",
     "compose": "Compose email",

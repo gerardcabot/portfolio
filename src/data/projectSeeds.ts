@@ -9,6 +9,17 @@ export type ProjectSeed = {
 
 export const projectSeeds: ProjectSeed[] = [
   {
+    tags: ["Graph neural networks", "GATv2", "StatsBomb 360", "Scouting"],
+    primaryUrl:
+      "https://www.linkedin.com/posts/gerard-cabot_footballanalytics-scouting-statsbomb-ugcPost-7520530194827313154-ZaC1/",
+    links: [
+      {
+        url: "https://www.linkedin.com/posts/gerard-cabot_footballanalytics-scouting-statsbomb-ugcPost-7520530194827313154-ZaC1/",
+        icon: "linkedin",
+      },
+    ],
+  },
+  {
     tags: ["React", "Flask", "XGBoost", "StatsBomb", "Vercel"],
     primaryUrl: "https://react-flask-psi.vercel.app/visualization",
     links: [

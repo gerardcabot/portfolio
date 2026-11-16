@@ -59,7 +59,7 @@
         "roles": "Científic de dades futbolístics \u00b7 col·laborador recerca",
         "location": "València · remot",
         "bullets": [
-          "Similar Brain: comparar jugadors a partir de la intenció de la passada més enllà del percentatge d’encert, amb perfils exploratoris per als cicles de fitxatges.",
+          "Recerca Similar Brain, portada a producció com a Decision Twins: comparar jugadors per les decisions de passada que prenen en les mateixes situacions, més enllà del percentatge d’encert, amb perfils exploratoris per als cicles de fitxatges.",
           "Facilitació d’informes perquè tornin sobre similitudes: sobrenoms de peces curtes i narratives tàctiques més sòlides després del partit."
         ]
       },
@@ -186,8 +186,14 @@
   },
   "projects": {
     "heading": "Projectes",
-    "intro": "Dues peces recurrents: tesi destacada més un repte cívic sobre telelectura urbana.",
+    "intro": "Tres peces recurrents: una eina privada de scouting amb el Levante UD, una tesi destacada i un repte cívic sobre telelectura urbana.",
     "cards": [
+      {
+        "title": "Decision Twins",
+        "description": "Eina privada de scouting creada amb el Levante UD per trobar jugadors que prenen la mateixa decisió de passada en la mateixa situació. Una xarxa neuronal de grafs (GATv2) llegeix cada passada amb el context de StatsBomb 360; els criteris d’èxit es van fixar abans de veure resultats i les llistes de bessons van predir millor les decisions en partits no vistos que una referència basada en similitud de context.",
+        "highlight": "Creat amb el Levante UD · eina privada",
+        "linkLabels": ["LinkedIn"]
+      },
       {
         "title": "Stars of the Future",
         "description": "Stack automatitzat de scouting (tesi Excellent with Honours a la UPF): KPIs StatsBomb, XGBoost per a joves de LaLiga, Flask \u002b React producció per comparatives en viu.",
@@ -209,7 +215,7 @@
   },
   "contact": {
     "heading": "Contacte",
-    "intro": "Contractacions, scouts o codi robust: correu sempre arriba; respondo en català, castellà o anglès amb la llengua del missatge.",
+    "intro": "Tres peces recurrents: una eina privada de scouting amb el Levante UD, una tesi destacada i un repte cívic sobre telelectura urbana.",
     "channels": "Canals",
     "emailLabel": "Correu ·",
     "compose": "Redactar missatge",

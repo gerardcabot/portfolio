@@ -59,7 +59,7 @@
         "roles": "Científico de datos deportivos \u00b7 colaborador investigación",
         "location": "Valencia · remoto",
         "bullets": [
-          "Similar Brain: comparable jugadores mediante intención en el pase más allá del porcentaje de acierto para búsqueda de perfiles en fichajes.",
+          "Investigación Similar Brain, llevada a producción como Decision Twins: comparar jugadores por las decisiones de pase que toman en las mismas situaciones, más allá del porcentaje de acierto, para la búsqueda de perfiles en fichajes.",
           "Embalaje de outputs de similitud (perfiles exploratorios para listas cortas y reviews postpartido con narrativa táctica más sólida)."
         ]
       },
@@ -186,8 +186,14 @@
   },
   "projects": {
     "heading": "Proyectos",
-    "intro": "Dos piezas recurrentes: tesis laureada más un reto ciudadano sobre telemetría de consumo.",
+    "intro": "Tres piezas recurrentes: una herramienta privada de scouting con el Levante UD, una tesis laureada y un reto ciudadano sobre telemetría de consumo.",
     "cards": [
+      {
+        "title": "Decision Twins",
+        "description": "Herramienta privada de scouting creada con el Levante UD para encontrar jugadores que toman la misma decisión de pase en la misma situación. Una red neuronal de grafos (GATv2) lee cada pase con el contexto de StatsBomb 360; los criterios de éxito se fijaron antes de ver resultados y las listas de gemelos predijeron mejor las decisiones en partidos no vistos que una referencia basada en similitud de contexto.",
+        "highlight": "Creado con el Levante UD · herramienta privada",
+        "linkLabels": ["LinkedIn"]
+      },
       {
         "title": "Stars of the Future",
         "description": "Stack automatizado para scouting (tesis Excellent with Honours en UPF): KPIs StatsBomb, XGBoost para jóvenes de LaLiga, Flask + React en producción para comparativas vivas.",
@@ -209,7 +215,7 @@
   },
   "contact": {
     "heading": "Contacto",
-    "intro": "Contratos, scouting o ingeniería: email es más fiable; respondo en catalán, castellano o inglés usando el mismo idioma del mensaje.",
+    "intro": "Tres piezas recurrentes: una herramienta privada de scouting con el Levante UD, una tesis laureada y un reto ciudadano sobre telemetría de consumo.",
     "channels": "Canales",
     "emailLabel": "Correo ·",
     "compose": "Redactar mensaje",

@@ -59,7 +59,7 @@
         "roles": "Data scientist football \u00b7 collaborateur recherche",
         "location": "Valence · remote",
         "bullets": [
-          "Similar Brain : comparer joueurs à partir de la volonté passe plutôt qu’un brut de pourcentages, pour profiler des mouvements de recrutement.",
+          "Recherche Similar Brain, déployée sous le nom Decision Twins : comparer les joueurs selon les décisions de passe qu’ils prennent dans les mêmes situations plutôt que selon de simples pourcentages de réussite, pour profiler des mouvements de recrutement.",
           "Emballages de sortie similarité revisitables: fiches liste courte et revues après match au récit tactique mieux fichu."
         ]
       },
@@ -186,8 +186,14 @@
   },
   "projects": {
     "heading": "Projets",
-    "intro": "Deux éléments encore cités au fil des entretiens: un mémoire couronné, un marathon data citadin sur télérelève.",
+    "intro": "Trois éléments encore cités au fil des entretiens: un outil de scouting privé conçu avec le Levante UD, un mémoire couronné, un marathon data citadin sur télérelève.",
     "cards": [
+      {
+        "title": "Decision Twins",
+        "description": "Outil de scouting privé conçu avec le Levante UD pour trouver les joueurs qui prennent la même décision de passe dans la même situation. Un réseau de neurones sur graphes (GATv2) lit chaque passe avec le contexte StatsBomb 360 ; les critères de succès ont été fixés avant de voir les résultats et les listes de jumeaux ont mieux prédit les décisions sur des matchs non vus qu’une référence fondée sur la similarité de contexte.",
+        "highlight": "Conçu avec le Levante UD · outil privé",
+        "linkLabels": ["Post LinkedIn"]
+      },
       {
         "title": "Stars of the Future",
         "description": "Stack scouting automatisé issu du mémoire Excellent with Honours (UPF) : KPIs StatsBomb, XGBoost juniors LaLiga, Flask + React en prod pour comparaisons live.",
@@ -209,7 +215,7 @@
   },
   "contact": {
     "heading": "Contact",
-    "intro": "Opportunités d’embauche, partenariat scouting ou échanges infra : préférez l’email. Je réponds en français, catalan, espagnol ou anglais, dans votre langue d’écriture.",
+    "intro": "Trois éléments encore cités au fil des entretiens: un outil de scouting privé conçu avec le Levante UD, un mémoire couronné, un marathon data citadin sur télérelève.",
     "channels": "Canaux",
     "emailLabel": "Courriel ·",
     "compose": "Rédiger un message",
